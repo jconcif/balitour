@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Tour Latino | Guías en Español</title>
+    <meta name="description"
+        content="Agencia de turismo en Bali especializada en el mercado hispanohablante. Tours privados con guías en español.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bali Tour Latino</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#tours" data-i18n="nav.tours">Tours</a></li>
+                <li><a href="#reviews" data-i18n="nav.reviews">Reseñas</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="#nosotros" data-i18n="nav.about">Sobre Nosotros</a></li>
+                <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+                <li>
+                    <select id="lang-switch" class="lang-switch">
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="id">🇮🇩 ID</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1 data-i18n="hero.title">Bali en tu idioma</h1>
+            <p data-i18n="hero.subtitle">Experiencias auténticas y guías 100% en español diseñadas para viajeros latinos
+                que buscan magia y comodidad.</p>
+            <a href="#tours" class="btn btn-primary" data-i18n="hero.cta">Ver Tours</a>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="section-padding value-prop">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-card">
+                    <i class="fas fa-language"></i>
+                    <h3 data-i18n="value.guides.title">Guías 100% Español</h3>
+                    <p data-i18n="value.guides.desc">Olvídate de las barreras del idioma. Nuestros guías locales hablan
+                        tu lengua con fluidez.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3 data-i18n="value.friendly.title">Trato Cercano</h3>
+                    <p data-i18n="value.friendly.desc">Te tratamos como familia. Flexibilidad y calidez latina en el
+                        corazón de Indonesia.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-i18n="value.safety.title">Seguridad Garantizada</h3>
+                    <p data-i18n="value.safety.desc">Conductores profesionales y vehículos cómodos con aire
+                        acondicionado para tu tranquilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="tours.title">Nuestros Tours Favoritos</h2>
+                <p data-i18n="tours.subtitle">Rutas diseñadas para enamorarte de la isla de los dioses</p>
+            </div>
+
+            <div class="tours-grid">
+                <!-- Tour 1 -->
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1559628233-eb1b1a45564b?auto=format&fit=crop&w=800&q=80"
+                            alt="Ubud Rice Terrace">
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="tour1.title">El Corazón de Bali (Ubud Clásico)</h3>
+                        <p class="tour-desc" data-i18n="tour1.desc">Explora terrazas de arroz, el bosque de los monos y
+                            templos sagrados en el centro cultural de la isla.</p>
+                        <div class="tour-footer">
+                            <div class="price">
+                                <span class="price-old">70€</span>
+                                <span class="price-new">55€</span>
+                            </div>
+                            <button class="btn btn-primary btn-book" data-tour="El Corazón de Bali"
+                                data-i18n="btn.book">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 2 -->
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=800&q=80"
+                            alt="Lempuyang Temple Gate">
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="tour2.title">Puerta al Cielo (Ruta Este)</h3>
+                        <p class="tour-desc" data-i18n="tour2.desc">La foto icónica en Lempuyang, el palacio de agua
+                            Tirta Gangga y playas de arena negra.</p>
+                        <div class="tour-footer">
+                            <div class="price">
+                                <span class="price-old">75€</span>
+                                <span class="price-new">60€</span>
+                            </div>
+                            <button class="btn btn-primary btn-book" data-tour="Puerta al Cielo"
+                                data-i18n="btn.book">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 3 -->
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
+                            alt="Uluwatu Cliff">
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="tour3.title">Atardecer y Olas (Ruta Sur)</h3>
+                        <p class="tour-desc" data-i18n="tour3.desc">Acantilados de Uluwatu, danza Kecak al atardecer y
+                            cena de mariscos en Jimbaran.</p>
+                        <div class="tour-footer">
+                            <div class="price">
+                                <span class="price-old">65€</span>
+                                <span class="price-new">50€</span>
+                            </div>
+                            <button class="btn btn-primary btn-book" data-tour="Atardecer y Olas"
+                                data-i18n="btn.book">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 4 -->
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1520168646905-00463442afb6?auto=format&fit=crop&w=800&q=80"
+                            alt="Bali Waterfall">
+                    </div>
+                    <div class="tour-info">
+                        <h3 data-i18n="tour4.title">Magia del Norte (Naturaleza)</h3>
+                        <p class="tour-desc" data-i18n="tour4.desc">Cascadas impresionantes, lagos gemelos y el templo
+                            flotante Ulun Danu Beratan.</p>
+                        <div class="tour-footer">
+                            <div class="price">
+                                <span class="price-old">80€</span>
+                                <span class="price-new">65€</span>
+                            </div>
+                            <button class="btn btn-primary btn-book" data-tour="Magia del Norte"
+                                data-i18n="btn.book">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section-padding" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="reviews.title">Lo que dicen nuestros viajeros</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                        <div>
+                            <h4>Maria G.</h4>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p data-i18n="review1.text">"Increíble experiencia. Nuestro guía Wayan hablaba perfecto español y
+                        nos llevó a lugares que no hubiéramos encontrado solos."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                        <div>
+                            <h4>Carlos R.</h4>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p data-i18n="review2.text">"La mejor decisión de nuestro viaje. Seguridad, comodidad y un trato
+                        super amable. ¡Recomendadísimo!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                            alt="User">
+                        <div>
+                            <h4>Laura & Dani</h4>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p data-i18n="review3.text">"Hicimos la ruta sur y fue mágico. La cena en Jimbaran organizada por
+                        ellos fue el broche de oro."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q1">¿El precio incluye entradas?</h3>
+                    <p data-i18n="faq.a1">No, el precio es por el servicio de transporte privado y guía. Las entradas se
+                        pagan aparte en cada templo (aprox 3-5€).</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q2">¿Cómo se realiza el pago?</h3>
+                    <p data-i18n="faq.a2">El pago se realiza en efectivo (Rupias o Euros) directamente al guía al
+                        finalizar el tour.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-i18n="faq.q3">¿Puedo personalizar la ruta?</h3>
+                    <p data-i18n="faq.a3">¡Claro! Nuestros tours son privados y flexibles. Podemos adaptar la ruta a tus
+                        preferencias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="nosotros" class="section-padding about">
+        <div class="container about-content">
+            <div class="section-title">
+                <h2 data-i18n="about.title">Sobre Nosotros</h2>
+            </div>
+            <p data-i18n="about.p1">Somos un equipo de guías balineses enamorados de la cultura hispana. Después de años
+                aprendiendo español y recibiendo amigos de España y Latinoamérica, decidimos crear <strong>Bali Tour
+                    Latino</strong>.</p>
+            <p data-i18n="about.p2">Nuestra misión es simple: que descubras la verdadera esencia de Bali sintiéndote tan
+                cómodo como en casa. Sin prisas, con sonrisas y con la seguridad de que alguien te entiende
+                perfectamente.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Bali Tour Latino</h4>
+                    <p data-i18n="footer.desc">Tu conexión local en la isla de los dioses.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quicklinks">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="#tours" data-i18n="nav.tours">Tours</a></li>
+                        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Bali Tour Latino. <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="modal.title">Reserva tu Aventura</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="tourInput" data-i18n="modal.label.tour">Tour Seleccionado</label>
+                    <input type="text" id="tourInput" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="name" data-i18n="modal.label.name">Nombre Completo</label>
+                    <input type="text" id="name" required placeholder="Tu nombre"
+                        data-i18n-placeholder="modal.placeholder.name">
+                </div>
+                <div class="form-group">
+                    <label for="date" data-i18n="modal.label.date">Fecha Deseada</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="pax" data-i18n="modal.label.pax">Número de Pasajeros</label>
+                    <input type="number" id="pax" min="1" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel" data-i18n="modal.label.hotel">Hotel / Zona de recogida</label>
+                    <input type="text" id="hotel" required placeholder="Ej: Hotel W, Seminyak"
+                        data-i18n-placeholder="modal.placeholder.hotel">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="modal.label.lang">Idioma del Tour</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="language" value="Español" checked> <span
+                                data-i18n="lang.es">Español</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="language" value="Inglés"> <span data-i18n="lang.en">Inglés</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="modal.btn.send">Enviar a WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

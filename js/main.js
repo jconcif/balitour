@@ -8,53 +8,61 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'Sobre Nosotros',
             'nav.contact': 'Contacto',
-            'hero.title': 'Bali en tu idioma',
-            'hero.subtitle': 'Experiencias auténticas y guías 100% en español diseñadas para viajeros latinos que buscan magia y comodidad.',
-            'hero.cta': 'Ver Tours',
-            'value.guides.title': 'Guías 100% Español',
-            'value.guides.desc': 'Olvídate de las barreras del idioma. Nuestros guías locales hablan tu lengua con fluidez.',
-            'value.friendly.title': 'Trato Cercano',
-            'value.friendly.desc': 'Te tratamos como familia. Flexibilidad y calidez latina en el corazón de Indonesia.',
+            'hero.badge': '🔥 Plazas Limitadas',
+            'hero.title': 'Descubre Bali a Tu Manera',
+            'hero.subtitle': 'Experiencias auténticas con guías locales expertos. Tours privados adaptados a tus intereses en tu idioma preferido.',
+            'hero.cta': 'Explorar Tours',
+            'value.guides.title': 'Guías Multilingües',
+            'value.guides.desc': 'Guías locales expertos que hablan español, inglés e indonesio con fluidez. Sin barreras de idioma, solo conexiones auténticas.',
+            'value.friendly.title': 'Servicio Personalizado',
+            'value.friendly.desc': 'Te tratamos como familia. Itinerarios flexibles y hospitalidad cálida en el corazón de Bali.',
             'value.safety.title': 'Seguridad Garantizada',
-            'value.safety.desc': 'Conductores profesionales y vehículos cómodos con aire acondicionado para tu tranquilidad.',
-            'tours.title': 'Nuestros Tours Favoritos',
-            'tours.subtitle': 'Rutas diseñadas para enamorarte de la isla de los dioses',
-            'tour1.title': 'El Corazón de Bali (Ubud Clásico)',
-            'tour1.desc': 'Explora terrazas de arroz, el bosque de los monos y templos sagrados en el centro cultural de la isla.',
-            'tour2.title': 'Puerta al Cielo (Ruta Este)',
-            'tour2.desc': 'La foto icónica en Lempuyang, el palacio de agua Tirta Gangga y playas de arena negra.',
+            'value.safety.desc': 'Conductores profesionales, vehículos cómodos con aire acondicionado y seguro completo para tu tranquilidad.',
+            'trust.certified': 'Guías Certificados',
+            'trust.rating': '4.9★ Valoración',
+            'trust.travelers': '5000+ Viajeros',
+            'trust.satisfaction': '100% Satisfacción',
+            'tours.title': 'Nuestros Tours Más Populares',
+            'tours.subtitle': 'Experiencias cuidadosamente diseñadas para descubrir la magia de Bali',
+            'tour1.title': 'Corazón de Bali (Ubud Clásico)',
+            'tour1.desc': 'Explora impresionantes terrazas de arroz, el sagrado bosque de los monos y templos antiguos en el corazón cultural de Bali.',
+            'tour2.title': 'Puertas del Cielo (Ruta Este)',
+            'tour2.desc': 'Captura la icónica foto del templo Lempuyang, visita el palacio de agua Tirta Gangga y descubre playas de arena negra.',
             'tour3.title': 'Atardecer y Olas (Ruta Sur)',
-            'tour3.desc': 'Acantilados de Uluwatu, danza Kecak al atardecer y cena de mariscos en Jimbaran.',
+            'tour3.desc': 'Experimenta los dramáticos acantilados de Uluwatu, la tradicional danza del fuego Kecak al atardecer y cena de mariscos frescos en Jimbaran.',
             'tour4.title': 'Magia del Norte (Naturaleza)',
-            'tour4.desc': 'Cascadas impresionantes, lagos gemelos y el templo flotante Ulun Danu Beratan.',
-            'btn.book': 'Reservar',
-            'reviews.title': 'Lo que dicen nuestros viajeros',
-            'review1.text': '"Increíble experiencia. Nuestro guía Wayan hablaba perfecto español y nos llevó a lugares que no hubiéramos encontrado solos."',
-            'review2.text': '"La mejor decisión de nuestro viaje. Seguridad, comodidad y un trato super amable. ¡Recomendadísimo!"',
-            'review3.text': '"Hicimos la ruta sur y fue mágico. La cena en Jimbaran organizada por ellos fue el broche de oro."',
+            'tour4.desc': 'Descubre cascadas impresionantes, lagos gemelos serenos y el icónico templo flotante Ulun Danu Beratan.',
+            'btn.book': 'Reservar Ahora',
+            'reviews.title': 'Lo Que Dicen Nuestros Viajeros',
+            'review1.text': '"¡Experiencia increíble! Nuestro guía Wayan hablaba perfecto español y nos llevó a joyas escondidas que nunca habríamos encontrado por nuestra cuenta. ¡Muy recomendable!"',
+            'review2.text': '"¡La mejor decisión de nuestro viaje! El guía fue profesional, el vehículo cómodo y el servicio excepcional. ¡No se puede pedir más!"',
+            'review3.text': '"Hicimos la ruta sur y fue mágico. El atardecer en Uluwatu y la cena de mariscos que organizaron en Jimbaran fueron inolvidables!"',
             'faq.title': 'Preguntas Frecuentes',
-            'faq.q1': '¿El precio incluye entradas?',
-            'faq.a1': 'No, el precio es por el servicio de transporte privado y guía. Las entradas se pagan aparte en cada templo (aprox 3-5€).',
-            'faq.q2': '¿Cómo se realiza el pago?',
-            'faq.a2': 'El pago se realiza en efectivo (Rupias o Euros) directamente al guía al finalizar el tour.',
-            'faq.q3': '¿Puedo personalizar la ruta?',
-            'faq.a3': '¡Claro! Nuestros tours son privados y flexibles. Podemos adaptar la ruta a tus preferencias.',
+            'faq.q1': '¿Las entradas están incluidas?',
+            'faq.a1': 'No, el precio cubre transporte privado y servicio de guía. Las entradas a los templos se pagan por separado (aproximadamente 3-5€ por sitio).',
+            'faq.q2': '¿Cómo realizo el pago?',
+            'faq.a2': 'El pago se realiza en efectivo (Rupias Indonesias o Euros) directamente a tu guía al final del tour. También aceptamos transferencias bancarias.',
+            'faq.q3': '¿Puedo personalizar mi tour?',
+            'faq.a3': '¡Por supuesto! Todos nuestros tours son privados y flexibles. Podemos adaptar el itinerario según tus intereses y preferencias.',
+            'faq.q4': '¿Qué idiomas hablan los guías?',
+            'faq.a4': 'Nuestros guías hablan español, inglés e indonesio con fluidez. Solo indícanos tu idioma preferido al reservar.',
             'about.title': 'Sobre Nosotros',
-            'about.p1': 'Somos un equipo de guías balineses enamorados de la cultura hispana. Después de años aprendiendo español y recibiendo amigos de España y Latinoamérica, decidimos crear <strong>Bali Tour Latino</strong>.',
-            'about.p2': 'Nuestra misión es simple: que descubras la verdadera esencia de Bali sintiéndote tan cómodo como en casa. Sin prisas, con sonrisas y con la seguridad de que alguien te entiende perfectamente.',
-            'footer.desc': 'Tu conexión local en la isla de los dioses.',
+            'about.p1': 'Somos un equipo de guías balineses apasionados dedicados a compartir la belleza y cultura de nuestra isla. Con años de experiencia recibiendo viajeros de todo el mundo, creamos <strong>Bali Tour</strong> para ofrecer experiencias auténticas y personalizadas.',
+            'about.p2': 'Nuestra misión es simple: ayudarte a descubrir la verdadera esencia de Bali mientras te sientes cómodo y bien cuidado. Sin prisas, solo sonrisas, conexiones genuinas y recuerdos inolvidables.',
+            'footer.desc': 'Tu conexión local en la Isla de los Dioses.',
             'footer.quicklinks': 'Enlaces Rápidos',
             'footer.follow': 'Síguenos',
             'footer.rights': 'Todos los derechos reservados.',
-            'modal.title': 'Reserva tu Aventura',
+            'modal.title': 'Reserva Tu Aventura',
             'modal.label.tour': 'Tour Seleccionado',
             'modal.label.name': 'Nombre Completo',
-            'modal.label.date': 'Fecha Deseada',
-            'modal.label.pax': 'Número de Pasajeros',
-            'modal.label.hotel': 'Hotel / Zona de recogida',
+            'modal.label.date': 'Fecha Preferida',
+            'modal.label.pax': 'Número de Viajeros',
+            'modal.label.hotel': 'Hotel / Lugar de Recogida',
             'modal.label.lang': 'Idioma del Tour',
             'lang.es': 'Español',
             'lang.en': 'Inglés',
+            'lang.id': 'Indonesio',
             'modal.btn.send': 'Enviar a WhatsApp',
             'modal.placeholder.name': 'Tu nombre',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak'
@@ -66,53 +74,61 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'About Us',
             'nav.contact': 'Contact',
-            'hero.title': 'Bali in Your Language',
-            'hero.subtitle': 'Authentic experiences and local guides designed for travelers seeking magic and comfort.',
-            'hero.cta': 'View Tours',
-            'value.guides.title': 'Local Guides',
-            'value.guides.desc': 'Forget language barriers. Our local guides speak your language fluently.',
-            'value.friendly.title': 'Friendly Service',
-            'value.friendly.desc': 'We treat you like family. Flexibility and warmth in the heart of Indonesia.',
+            'hero.badge': '🔥 Limited Spots Available',
+            'hero.title': 'Discover Bali Your Way',
+            'hero.subtitle': 'Authentic experiences with expert local guides. Private tours tailored to your interests in your preferred language.',
+            'hero.cta': 'Explore Tours',
+            'value.guides.title': 'Multilingual Guides',
+            'value.guides.desc': 'Expert local guides fluent in Spanish, English, and Indonesian. No language barriers, just authentic connections.',
+            'value.friendly.title': 'Personalized Service',
+            'value.friendly.desc': 'We treat you like family. Flexible itineraries and warm hospitality in the heart of Bali.',
             'value.safety.title': 'Safety Guaranteed',
-            'value.safety.desc': 'Professional drivers and comfortable air-conditioned vehicles for your peace of mind.',
-            'tours.title': 'Our Favorite Tours',
-            'tours.subtitle': 'Routes designed to make you fall in love with the Island of Gods',
+            'value.safety.desc': 'Professional drivers, comfortable air-conditioned vehicles, and full insurance for your peace of mind.',
+            'trust.certified': 'Certified Guides',
+            'trust.rating': '4.9★ Rating',
+            'trust.travelers': '5000+ Travelers',
+            'trust.satisfaction': '100% Satisfaction',
+            'tours.title': 'Our Most Popular Tours',
+            'tours.subtitle': 'Carefully crafted experiences to discover the magic of Bali',
             'tour1.title': 'Heart of Bali (Classic Ubud)',
-            'tour1.desc': 'Explore rice terraces, the monkey forest, and sacred temples in the cultural center of the island.',
-            'tour2.title': 'Gate to Heaven (East Route)',
-            'tour2.desc': 'The iconic photo at Lempuyang, Tirta Gangga water palace, and black sand beaches.',
+            'tour1.desc': 'Explore stunning rice terraces, sacred monkey forest, and ancient temples in Bali\'s cultural heart.',
+            'tour2.title': 'Gates of Heaven (East Route)',
+            'tour2.desc': 'Capture the iconic Lempuyang temple photo, visit Tirta Gangga water palace, and discover black sand beaches.',
             'tour3.title': 'Sunset & Waves (South Route)',
-            'tour3.desc': 'Uluwatu cliffs, Kecak dance at sunset, and seafood dinner in Jimbaran.',
-            'tour4.title': 'Magic of the North (Nature)',
-            'tour4.desc': 'Stunning waterfalls, twin lakes, and the floating temple Ulun Danu Beratan.',
+            'tour3.desc': 'Experience dramatic Uluwatu cliffs, traditional Kecak fire dance at sunset, and fresh seafood dinner in Jimbaran.',
+            'tour4.title': 'Northern Magic (Nature)',
+            'tour4.desc': 'Discover breathtaking waterfalls, serene twin lakes, and the iconic floating temple Ulun Danu Beratan.',
             'btn.book': 'Book Now',
             'reviews.title': 'What Our Travelers Say',
-            'review1.text': '"Incredible experience. Our guide Wayan spoke perfect Spanish and took us to places we wouldn\'t have found alone."',
-            'review2.text': '"The best decision of our trip. Safety, comfort, and super friendly service. Highly recommended!"',
-            'review3.text': '"We did the south route and it was magical. The dinner in Jimbaran organized by them was the finishing touch."',
+            'review1.text': '"Amazing experience! Our guide Wayan spoke perfect Spanish and took us to hidden gems we would never have found on our own. Highly recommend!"',
+            'review2.text': '"Best decision of our trip! The guide was professional, the vehicle was comfortable, and the service was exceptional. Couldn\'t ask for more!"',
+            'review3.text': '"We did the south route and it was magical. The sunset at Uluwatu and the seafood dinner they arranged in Jimbaran were unforgettable!"',
             'faq.title': 'Frequently Asked Questions',
-            'faq.q1': 'Does the price include tickets?',
-            'faq.a1': 'No, the price is for private transport and guide service. Tickets are paid separately at each temple (approx 3-5€).',
-            'faq.q2': 'How is payment made?',
-            'faq.a2': 'Payment is made in cash (Rupiah or Euros) directly to the guide at the end of the tour.',
-            'faq.q3': 'Can I customize the route?',
-            'faq.a3': 'Of course! Our tours are private and flexible. We can adapt the route to your preferences.',
+            'faq.q1': 'Are entrance fees included?',
+            'faq.a1': 'No, the price covers private transportation and guide service. Temple entrance fees are paid separately (approximately 3-5€ per site).',
+            'faq.q2': 'How do I make payment?',
+            'faq.a2': 'Payment is made in cash (Indonesian Rupiah or Euros) directly to your guide at the end of the tour. We also accept bank transfers.',
+            'faq.q3': 'Can I customize my tour?',
+            'faq.a3': 'Absolutely! All our tours are private and flexible. We can adapt the itinerary to match your interests and preferences.',
+            'faq.q4': 'What languages do guides speak?',
+            'faq.a4': 'Our guides are fluent in Spanish, English, and Indonesian. Just let us know your preferred language when booking.',
             'about.title': 'About Us',
-            'about.p1': 'We are a team of Balinese guides in love with Hispanic culture. After years of learning Spanish and welcoming friends from Spain and Latin America, we decided to create <strong>Bali Tour Latino</strong>.',
-            'about.p2': 'Our mission is simple: for you to discover the true essence of Bali while feeling as comfortable as at home. No rush, with smiles, and the certainty that someone understands you perfectly.',
-            'footer.desc': 'Your local connection on the Island of Gods.',
+            'about.p1': 'We are a team of passionate Balinese guides dedicated to sharing the beauty and culture of our island. With years of experience welcoming travelers from around the world, we created <strong>Bali Tour</strong> to offer authentic, personalized experiences.',
+            'about.p2': 'Our mission is simple: help you discover the true essence of Bali while feeling comfortable and well-cared for. No rush, just smiles, genuine connections, and unforgettable memories.',
+            'footer.desc': 'Your local connection to the Island of Gods.',
             'footer.quicklinks': 'Quick Links',
             'footer.follow': 'Follow Us',
             'footer.rights': 'All rights reserved.',
             'modal.title': 'Book Your Adventure',
             'modal.label.tour': 'Selected Tour',
             'modal.label.name': 'Full Name',
-            'modal.label.date': 'Desired Date',
-            'modal.label.pax': 'Number of Passengers',
-            'modal.label.hotel': 'Hotel / Pickup Area',
+            'modal.label.date': 'Preferred Date',
+            'modal.label.pax': 'Number of Travelers',
+            'modal.label.hotel': 'Hotel / Pickup Location',
             'modal.label.lang': 'Tour Language',
             'lang.es': 'Spanish',
             'lang.en': 'English',
+            'lang.id': 'Indonesian',
             'modal.btn.send': 'Send to WhatsApp',
             'modal.placeholder.name': 'Your name',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak'
@@ -124,53 +140,61 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'Tentang Kami',
             'nav.contact': 'Kontak',
-            'hero.title': 'Bali dalam Bahasa Anda',
-            'hero.subtitle': 'Pengalaman otentik dan pemandu lokal untuk wisatawan yang mencari keajaiban dan kenyamanan.',
-            'hero.cta': 'Lihat Tur',
-            'value.guides.title': 'Pemandu Lokal',
-            'value.guides.desc': 'Lupakan kendala bahasa. Pemandu lokal kami berbicara bahasa Anda dengan lancar.',
-            'value.friendly.title': 'Layanan Ramah',
-            'value.friendly.desc': 'Kami memperlakukan Anda seperti keluarga. Fleksibilitas dan kehangatan di jantung Indonesia.',
+            'hero.badge': '🔥 Tempat Terbatas',
+            'hero.title': 'Temukan Bali dengan Cara Anda',
+            'hero.subtitle': 'Pengalaman autentik dengan pemandu lokal ahli. Tur pribadi disesuaikan dengan minat Anda dalam bahasa pilihan Anda.',
+            'hero.cta': 'Jelajahi Tur',
+            'value.guides.title': 'Pemandu Multibahasa',
+            'value.guides.desc': 'Pemandu lokal ahli yang fasih berbahasa Spanyol, Inggris, dan Indonesia. Tanpa hambatan bahasa, hanya koneksi autentik.',
+            'value.friendly.title': 'Layanan Personal',
+            'value.friendly.desc': 'Kami memperlakukan Anda seperti keluarga. Itinerary fleksibel dan keramahan hangat di jantung Bali.',
             'value.safety.title': 'Keamanan Terjamin',
-            'value.safety.desc': 'Pengemudi profesional dan kendaraan nyaman ber-AC untuk ketenangan pikiran Anda.',
-            'tours.title': 'Tur Favorit Kami',
-            'tours.subtitle': 'Rute yang dirancang untuk membuat Anda jatuh cinta dengan Pulau Dewata',
+            'value.safety.desc': 'Pengemudi profesional, kendaraan ber-AC yang nyaman, dan asuransi penuh untuk ketenangan pikiran Anda.',
+            'trust.certified': 'Pemandu Bersertifikat',
+            'trust.rating': '4.9★ Rating',
+            'trust.travelers': '5000+ Wisatawan',
+            'trust.satisfaction': '100% Kepuasan',
+            'tours.title': 'Tur Paling Populer Kami',
+            'tours.subtitle': 'Pengalaman yang dirancang dengan hati-hati untuk menemukan keajaiban Bali',
             'tour1.title': 'Jantung Bali (Ubud Klasik)',
-            'tour1.desc': 'Jelajahi sawah terasering, hutan monyet, dan pura suci di pusat budaya pulau ini.',
+            'tour1.desc': 'Jelajahi sawah terasering yang menakjubkan, hutan monyet suci, dan pura kuno di jantung budaya Bali.',
             'tour2.title': 'Gerbang Surga (Rute Timur)',
-            'tour2.desc': 'Foto ikonik di Lempuyang, istana air Tirta Gangga, dan pantai pasir hitam.',
+            'tour2.desc': 'Ambil foto ikonik pura Lempuyang, kunjungi istana air Tirta Gangga, dan temukan pantai pasir hitam.',
             'tour3.title': 'Matahari Terbenam & Ombak (Rute Selatan)',
-            'tour3.desc': 'Tebing Uluwatu, tari Kecak saat matahari terbenam, dan makan malam seafood di Jimbaran.',
+            'tour3.desc': 'Rasakan tebing Uluwatu yang dramatis, tari api Kecak tradisional saat matahari terbenam, dan makan malam seafood segar di Jimbaran.',
             'tour4.title': 'Keajaiban Utara (Alam)',
-            'tour4.desc': 'Air terjun yang menakjubkan, danau kembar, dan pura terapung Ulun Danu Beratan.',
+            'tour4.desc': 'Temukan air terjun yang menakjubkan, danau kembar yang tenang, dan pura terapung ikonik Ulun Danu Beratan.',
             'btn.book': 'Pesan Sekarang',
             'reviews.title': 'Apa Kata Wisatawan Kami',
-            'review1.text': '"Pengalaman luar biasa. Pemandu kami Wayan berbicara bahasa Spanyol dengan sempurna dan membawa kami ke tempat-tempat yang tidak akan kami temukan sendiri."',
-            'review2.text': '"Keputusan terbaik perjalanan kami. Keamanan, kenyamanan, dan layanan super ramah. Sangat direkomendasikan!"',
-            'review3.text': '"Kami melakukan rute selatan dan itu ajaib. Makan malam di Jimbaran yang diatur oleh mereka adalah sentuhan akhir."',
+            'review1.text': '"Pengalaman luar biasa! Pemandu kami Wayan berbicara bahasa Spanyol dengan sempurna dan membawa kami ke permata tersembunyi yang tidak akan pernah kami temukan sendiri. Sangat direkomendasikan!"',
+            'review2.text': '"Keputusan terbaik perjalanan kami! Pemandu profesional, kendaraan nyaman, dan layanan luar biasa. Tidak bisa meminta lebih!"',
+            'review3.text': '"Kami melakukan rute selatan dan itu ajaib. Matahari terbenam di Uluwatu dan makan malam seafood yang mereka atur di Jimbaran tak terlupakan!"',
             'faq.title': 'Pertanyaan yang Sering Diajukan',
-            'faq.q1': 'Apakah harga termasuk tiket?',
-            'faq.a1': 'Tidak, harga adalah untuk layanan transportasi pribadi dan pemandu. Tiket dibayar terpisah di setiap pura (sekitar 3-5€).',
-            'faq.q2': 'Bagaimana pembayaran dilakukan?',
-            'faq.a2': 'Pembayaran dilakukan secara tunai (Rupiah atau Euro) langsung kepada pemandu di akhir tur.',
-            'faq.q3': 'Bisakah saya menyesuaikan rute?',
-            'faq.a3': 'Tentu saja! Tur kami bersifat pribadi dan fleksibel. Kami dapat menyesuaikan rute dengan preferensi Anda.',
+            'faq.q1': 'Apakah biaya masuk sudah termasuk?',
+            'faq.a1': 'Tidak, harga mencakup transportasi pribadi dan layanan pemandu. Biaya masuk pura dibayar terpisah (sekitar 3-5€ per lokasi).',
+            'faq.q2': 'Bagaimana cara pembayaran?',
+            'faq.a2': 'Pembayaran dilakukan secara tunai (Rupiah Indonesia atau Euro) langsung kepada pemandu Anda di akhir tur. Kami juga menerima transfer bank.',
+            'faq.q3': 'Bisakah saya menyesuaikan tur saya?',
+            'faq.a3': 'Tentu saja! Semua tur kami bersifat pribadi dan fleksibel. Kami dapat menyesuaikan itinerary sesuai minat dan preferensi Anda.',
+            'faq.q4': 'Bahasa apa yang digunakan pemandu?',
+            'faq.a4': 'Pemandu kami fasih berbahasa Spanyol, Inggris, dan Indonesia. Beri tahu kami bahasa pilihan Anda saat memesan.',
             'about.title': 'Tentang Kami',
-            'about.p1': 'Kami adalah tim pemandu Bali yang mencintai budaya Hispanik. Setelah bertahun-tahun belajar bahasa Spanyol dan menyambut teman-teman dari Spanyol dan Amerika Latin, kami memutuskan untuk membuat <strong>Bali Tour Latino</strong>.',
-            'about.p2': 'Misi kami sederhana: agar Anda menemukan esensi sejati Bali sambil merasa senyaman di rumah. Tanpa terburu-buru, dengan senyuman, dan kepastian bahwa seseorang mengerti Anda dengan sempurna.',
+            'about.p1': 'Kami adalah tim pemandu Bali yang berdedikasi untuk berbagi keindahan dan budaya pulau kami. Dengan pengalaman bertahun-tahun menyambut wisatawan dari seluruh dunia, kami menciptakan <strong>Bali Tour</strong> untuk menawarkan pengalaman autentik dan personal.',
+            'about.p2': 'Misi kami sederhana: membantu Anda menemukan esensi sejati Bali sambil merasa nyaman dan terawat dengan baik. Tanpa terburu-buru, hanya senyuman, koneksi tulus, dan kenangan tak terlupakan.',
             'footer.desc': 'Koneksi lokal Anda di Pulau Dewata.',
             'footer.quicklinks': 'Tautan Cepat',
             'footer.follow': 'Ikuti Kami',
-            'footer.rights': 'Hak cipta dilindungi undang-undang.',
+            'footer.rights': 'Hak cipta dilindungi.',
             'modal.title': 'Pesan Petualangan Anda',
             'modal.label.tour': 'Tur Dipilih',
             'modal.label.name': 'Nama Lengkap',
-            'modal.label.date': 'Tanggal Diinginkan',
-            'modal.label.pax': 'Jumlah Penumpang',
-            'modal.label.hotel': 'Hotel / Area Penjemputan',
+            'modal.label.date': 'Tanggal Pilihan',
+            'modal.label.pax': 'Jumlah Wisatawan',
+            'modal.label.hotel': 'Hotel / Lokasi Penjemputan',
             'modal.label.lang': 'Bahasa Tur',
             'lang.es': 'Spanyol',
             'lang.en': 'Inggris',
+            'lang.id': 'Indonesia',
             'modal.btn.send': 'Kirim ke WhatsApp',
             'modal.placeholder.name': 'Nama Anda',
             'modal.placeholder.hotel': 'Cth: Hotel W, Seminyak'
@@ -178,12 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Language Detection & Switching
-    let currentLang = 'es'; // Default
+    let currentLang = 'en'; // Default to English
     const userLang = navigator.language || navigator.userLanguage;
     const langSwitch = document.getElementById('lang-switch');
 
-    if (userLang.startsWith('en')) {
-        currentLang = 'en';
+    if (userLang.startsWith('es')) {
+        currentLang = 'es';
     } else if (userLang.startsWith('id')) {
         currentLang = 'id';
     }
@@ -211,6 +235,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.placeholder = translations[lang][key];
             }
         });
+
+        // Track language change
+        if (window.Analytics) {
+            Analytics.trackLanguageChange(lang);
+        }
     };
 
     // Initialize Language
@@ -220,7 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
     langSwitch.addEventListener('change', (e) => {
         updateLanguage(e.target.value);
     });
-
 
     // Mobile Menu
     const hamburger = document.querySelector('.hamburger');
@@ -247,6 +275,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Scroll Animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+
     // Modal Logic
     const modal = document.getElementById('bookingModal');
     const closeBtn = document.querySelector('.close-modal');
@@ -262,6 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
             tourInput.value = tourName;
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // Track booking start
+            if (window.Analytics) {
+                Analytics.trackBookingStart(tourName);
+            }
         });
     });
 
@@ -290,38 +341,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const hotel = document.getElementById('hotel').value;
         const lang = document.querySelector('input[name="language"]:checked').value;
 
-        // Construct message manually to avoid encoding issues with newlines
-        // We use %0A for new lines directly
-        let intro = "Hola Bali Tour Latino! 👋";
-        if (currentLang === 'en') intro = "Hello Bali Tour Latino! 👋";
-        if (currentLang === 'id') intro = "Halo Bali Tour Latino! 👋";
-
-        let body = "";
-        if (currentLang === 'es') {
-            body = `%0A%0AQuiero reservar un tour:%0A%0A🗺️ *Tour:* ${tour}%0A👤 *Nombre:* ${name}%0A📅 *Fecha:* ${date}%0A👥 *Pasajeros:* ${pax}%0A🏨 *Hotel:* ${hotel}%0A🗣️ *Idioma:* ${lang}%0A%0AEspero su confirmación. Gracias!`;
-        } else if (currentLang === 'en') {
-            body = `%0A%0AI want to book a tour:%0A%0A🗺️ *Tour:* ${tour}%0A👤 *Name:* ${name}%0A📅 *Date:* ${date}%0A👥 *Pax:* ${pax}%0A🏨 *Hotel:* ${hotel}%0A🗣️ *Language:* ${lang}%0A%0AAwaiting confirmation. Thanks!`;
-        } else {
-            body = `%0A%0ASaya ingin memesan tur:%0A%0A🗺️ *Tour:* ${tour}%0A👤 *Nama:* ${name}%0A📅 *Tanggal:* ${date}%0A👥 *Pax:* ${pax}%0A🏨 *Hotel:* ${hotel}%0A🗣️ *Bahasa:* ${lang}%0A%0AMenunggu konfirmasi. Terima kasih!`;
-        }
-
-        // Encode only the dynamic values if needed, but here we are constructing the URL string manually.
-        // Ideally, we should encodeURIComponent the user inputs to be safe, but keep the structure clean.
-        // The safest way is to build the string with placeholders and then replace, 
-        // BUT to fix the specific "" issue which often comes from double encoding or charset mismatch,
-        // we will build the URL parts separately.
+        // Construct message based on current language
+        let intro = "Hello Bali Tour! 👋";
+        if (currentLang === 'es') intro = "Hola Bali Tour! 👋";
+        if (currentLang === 'id') intro = "Halo Bali Tour! 👋";
 
         const encodedName = encodeURIComponent(name);
         const encodedTour = encodeURIComponent(tour);
         const encodedHotel = encodeURIComponent(hotel);
 
-        // Re-construct with encoded values
+        let body = "";
         if (currentLang === 'es') {
-            body = `%0A%0AQuiero reservar un tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nombre:* ${encodedName}%0A📅 *Fecha:* ${date}%0A👥 *Pasajeros:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Idioma:* ${lang}%0A%0AEspero su confirmación. Gracias!`;
+            body = `%0A%0AQuiero reservar un tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nombre:* ${encodedName}%0A📅 *Fecha:* ${date}%0A👥 *Pasajeros:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Idioma:* ${lang}%0A%0AEspero su confirmación. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            body = `%0A%0AI want to book a tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Name:* ${encodedName}%0A📅 *Date:* ${date}%0A👥 *Pax:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Language:* ${lang}%0A%0AAwaiting confirmation. Thanks!`;
+            body = `%0A%0AI want to book a tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Name:* ${encodedName}%0A📅 *Date:* ${date}%0A👥 *Travelers:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Language:* ${lang}%0A%0AAwaiting confirmation. Thanks!`;
         } else {
-            body = `%0A%0ASaya ingin memesan tur:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nama:* ${encodedName}%0A📅 *Tanggal:* ${date}%0A👥 *Pax:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Bahasa:* ${lang}%0A%0AMenunggu konfirmasi. Terima kasih!`;
+            body = `%0A%0ASaya ingin memesan tur:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nama:* ${encodedName}%0A📅 *Tanggal:* ${date}%0A👥 *Wisatawan:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Bahasa:* ${lang}%0A%0AMenunggu konfirmasi. Terima kasih!`;
         }
 
         const finalMessage = encodeURIComponent(intro) + body;
@@ -330,10 +365,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const phoneNumber = '6285940365407';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${finalMessage}`;
 
+        // Track booking submission
+        if (window.Analytics) {
+            Analytics.trackBookingSubmit(tour, pax, date);
+            Analytics.trackWhatsAppClick(tour);
+        }
+
         // Open in new tab
         window.open(whatsappUrl, '_blank');
 
         closeModal();
         bookingForm.reset();
+    });
+
+    // Track tour card views on scroll
+    const tourCards = document.querySelectorAll('.tour-card');
+    const tourObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && window.Analytics) {
+                const tourName = entry.target.querySelector('h3').textContent;
+                Analytics.trackTourView(tourName);
+                tourObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    tourCards.forEach(card => {
+        tourObserver.observe(card);
     });
 });

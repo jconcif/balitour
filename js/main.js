@@ -352,14 +352,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // 🏨 = \uD83C\uDFE8
         // 🗣️ = \uD83D\uDDE3\uFE0F
 
-        // Use fromCodePoint to generate emojis dynamically, bypassing any file encoding issues
-        const emojiWave = String.fromCodePoint(0x1F44B);
-        const emojiMap = String.fromCodePoint(0x1F5FA);
-        const emojiUser = String.fromCodePoint(0x1F464);
-        const emojiDate = String.fromCodePoint(0x1F4C5);
-        const emojiGroup = String.fromCodePoint(0x1F465);
-        const emojiHotel = String.fromCodePoint(0x1F3E8);
-        const emojiSpeak = String.fromCodePoint(0x1F5E3);
+        // Fallback to simple text symbols to guarantee compatibility
+        // Emoticons are removed to ensure clean message delivery first
+        const emojiWave = "";
+        const emojiMap = "-";
+        const emojiUser = "-";
+        const emojiDate = "-";
+        const emojiGroup = "-";
+        const emojiHotel = "-";
+        const emojiSpeak = "-";
 
         let intro = `Hello Bali Tour! ${emojiWave}`;
         if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;

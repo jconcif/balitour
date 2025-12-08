@@ -366,13 +366,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;
         if (currentLang === 'id') intro = `Halo Bali Tour! ${emojiWave}`;
 
-        let messageBody = "";
         if (currentLang === 'es') {
-            messageBody = `\n\nQuiero reservar un tour:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}\n\nEspero su confirmación. ¡Gracias!`;
+            messageBody = `\n\nHola, me gustaría recibir más información sobre este tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha tentativa:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}\n\nQuedo a la espera de los detalles. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            messageBody = `\n\nI want to book a tour:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}\n\nAwaiting confirmation. Thanks!`;
+            messageBody = `\n\nHi, I would like more information about this tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Tentative Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}\n\nLooking forward to the details. Thanks!`;
         } else {
-            messageBody = `\n\nSaya ingin memesan tur:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
+            messageBody = `\n\nHalo, saya ingin informasi lebih lanjut tentang tur ini:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
         }
 
         // Encode the entire message

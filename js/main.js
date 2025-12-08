@@ -352,13 +352,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // 🏨 = \uD83C\uDFE8
         // 🗣️ = \uD83D\uDDE3\uFE0F
 
-        const emojiWave = '\uD83D\uDC4B';
-        const emojiMap = '\uD83D\uDDFA\uFE0F';
-        const emojiUser = '\uD83D\uDC64';
-        const emojiDate = '\uD83D\uDCC5';
-        const emojiGroup = '\uD83D\uDC65';
-        const emojiHotel = '\uD83C\uDFE8';
-        const emojiSpeak = '\uD83D\uDDE3\uFE0F';
+        // Use fromCodePoint to generate emojis dynamically, bypassing any file encoding issues
+        const emojiWave = String.fromCodePoint(0x1F44B);
+        const emojiMap = String.fromCodePoint(0x1F5FA);
+        const emojiUser = String.fromCodePoint(0x1F464);
+        const emojiDate = String.fromCodePoint(0x1F4C5);
+        const emojiGroup = String.fromCodePoint(0x1F465);
+        const emojiHotel = String.fromCodePoint(0x1F3E8);
+        const emojiSpeak = String.fromCodePoint(0x1F5E3);
 
         let intro = `Hello Bali Tour! ${emojiWave}`;
         if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;

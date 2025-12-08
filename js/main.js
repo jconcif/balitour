@@ -321,6 +321,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const tourInput = document.getElementById('tourInput');
     const bookingForm = document.getElementById('bookingForm');
 
+    // Set minimum date to today (prevent past dates)
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+    }
+
     // Open Modal
     bookButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {

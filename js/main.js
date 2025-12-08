@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.pax': 'Número de Viajeros',
             'modal.label.hotel': 'Hotel / Lugar de Recogida',
             'modal.label.lang': 'Idioma del Tour',
-            'lang.es': 'Español',
+            'lang.es': 'Español (Sujeto a disponibilidad)',
             'lang.en': 'Inglés',
             'lang.id': 'Indonesio',
             'modal.btn.send': 'Enviar a WhatsApp',
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.pax': 'Number of Travelers',
             'modal.label.hotel': 'Hotel / Pickup Location',
             'modal.label.lang': 'Tour Language',
-            'lang.es': 'Spanish',
+            'lang.es': 'Spanish (Subject to availability)',
             'lang.en': 'English',
             'lang.id': 'Indonesian',
             'modal.btn.send': 'Send to WhatsApp',
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.pax': 'Jumlah Wisatawan',
             'modal.label.hotel': 'Hotel / Lokasi Penjemputan',
             'modal.label.lang': 'Bahasa Tur',
-            'lang.es': 'Spanyol',
+            'lang.es': 'Spanyol (Tergantung ketersediaan)',
             'lang.en': 'Inggris',
             'lang.id': 'Indonesia',
             'modal.btn.send': 'Kirim ke WhatsApp',
@@ -346,20 +346,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentLang === 'es') intro = "Hola Bali Tour! 👋";
         if (currentLang === 'id') intro = "Halo Bali Tour! 👋";
 
-        const encodedName = encodeURIComponent(name);
-        const encodedTour = encodeURIComponent(tour);
-        const encodedHotel = encodeURIComponent(hotel);
-
-        let body = "";
+        // Create raw message with newlines
+        let messageBody = "";
         if (currentLang === 'es') {
-            body = `%0A%0AQuiero reservar un tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nombre:* ${encodedName}%0A📅 *Fecha:* ${date}%0A👥 *Pasajeros:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Idioma:* ${lang}%0A%0AEspero su confirmación. ¡Gracias!`;
+            messageBody = `\n\nQuiero reservar un tour:\n\n🗺️ *Tour:* ${tour}\n👤 *Nombre:* ${name}\n📅 *Fecha:* ${date}\n👥 *Pasajeros:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Idioma:* ${lang}\n\nEspero su confirmación. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            body = `%0A%0AI want to book a tour:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Name:* ${encodedName}%0A📅 *Date:* ${date}%0A👥 *Travelers:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Language:* ${lang}%0A%0AAwaiting confirmation. Thanks!`;
+            messageBody = `\n\nI want to book a tour:\n\n🗺️ *Tour:* ${tour}\n👤 *Name:* ${name}\n📅 *Date:* ${date}\n👥 *Travelers:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Language:* ${lang}\n\nAwaiting confirmation. Thanks!`;
         } else {
-            body = `%0A%0ASaya ingin memesan tur:%0A%0A🗺️ *Tour:* ${encodedTour}%0A👤 *Nama:* ${encodedName}%0A📅 *Tanggal:* ${date}%0A👥 *Wisatawan:* ${pax}%0A🏨 *Hotel:* ${encodedHotel}%0A🗣️ *Bahasa:* ${lang}%0A%0AMenunggu konfirmasi. Terima kasih!`;
+            messageBody = `\n\nSaya ingin memesan tur:\n\n🗺️ *Tour:* ${tour}\n👤 *Nama:* ${name}\n📅 *Tanggal:* ${date}\n👥 *Wisatawan:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
         }
 
-        const finalMessage = encodeURIComponent(intro) + body;
+        // Encode the entire message at once to handle special chars and emojis correctly
+        const fullMessage = intro + messageBody;
+        const finalMessage = encodeURIComponent(fullMessage);
 
         // WhatsApp URL
         const phoneNumber = '6285940365407';

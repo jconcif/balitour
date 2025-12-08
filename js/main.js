@@ -238,6 +238,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Update WhatsApp links with localized messages
+        const contactLinks = document.querySelectorAll('.whatsapp-float, .contact-link');
+        const phoneNumber = '6285940365407';
+        let waText = "Hola, me gustaría más información sobre sus tours.";
+
+        if (lang === 'en') {
+            waText = "Hi, I would like more information about your tours.";
+        } else if (lang === 'id') {
+            waText = "Halo, saya ingin informasi lebih lanjut tentang tur Anda.";
+        }
+
+        const encodedWaText = encodeURIComponent(waText);
+        const newWaUrl = `https://wa.me/${phoneNumber}?text=${encodedWaText}`;
+
+        contactLinks.forEach(link => {
+            link.href = newWaUrl;
+            link.target = "_blank"; // Ensure it opens in new tab
+        });
+
         // Track language change
         if (window.Analytics) {
             Analytics.trackLanguageChange(lang);

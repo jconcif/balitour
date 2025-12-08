@@ -61,8 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.hotel': 'Hotel / Lugar de Recogida',
             'modal.label.lang': 'Idioma del Tour',
             'lang.es': 'Español (Sujeto a disponibilidad)',
-            'lang.en': 'Inglés',
-            'lang.id': 'Indonesio',
+            'lang.en': 'Inglés (Chófer habla inglés)',
             'modal.btn.send': 'Enviar a WhatsApp',
             'modal.placeholder.name': 'Tu nombre',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak'
@@ -127,8 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.hotel': 'Hotel / Pickup Location',
             'modal.label.lang': 'Tour Language',
             'lang.es': 'Spanish (Subject to availability)',
-            'lang.en': 'English',
-            'lang.id': 'Indonesian',
+            'lang.en': 'English (Fluent driver)',
             'modal.btn.send': 'Send to WhatsApp',
             'modal.placeholder.name': 'Your name',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak'
@@ -194,7 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.lang': 'Bahasa Tur',
             'lang.es': 'Spanyol (Tergantung ketersediaan)',
             'lang.en': 'Inggris',
-            'lang.id': 'Indonesia',
             'modal.btn.send': 'Kirim ke WhatsApp',
             'modal.placeholder.name': 'Nama Anda',
             'modal.placeholder.hotel': 'Cth: Hotel W, Seminyak'
@@ -367,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const date = document.getElementById('date').value;
         const pax = document.getElementById('pax').value;
         const hotel = document.getElementById('hotel').value;
-        const lang = document.querySelector('input[name="language"]:checked').value;
+        const lang = document.getElementById('tourLang').value;
 
         // Create raw message with newlines using Unicode escapes for safe encoding
         // 👋 = \uD83D\uDC4B (or \u{1F44B})

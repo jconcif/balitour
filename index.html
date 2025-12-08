@@ -358,20 +358,11 @@
                 </div>
                 <div class="form-group">
                     <label data-i18n="modal.label.lang">Tour Language</label>
-                    <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="language" value="English" checked> <span
-                                data-i18n="lang.en">English</span>
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="language" value="Spanish"> <span
-                                data-i18n="lang.es">Spanish</span>
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="language" value="Indonesian"> <span
-                                data-i18n="lang.id">Indonesian</span>
-                        </label>
-                    </div>
+                    <select id="tourLang"
+                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 1rem; color: #333; background-color: #fff;">
+                        <option value="Spanish" data-i18n="lang.es">Spanish</option>
+                        <option value="English" data-i18n="lang.en">English</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">
                     <i class="fab fa-whatsapp"></i> <span data-i18n="modal.btn.send">Send to WhatsApp</span>
@@ -387,7 +378,7 @@
     </a>
 
     <!-- Custom JS -->
-    <script src="js/main.js?v=11"></script>
+    <script src="js/main.js?v=12"></script>
 </body>
 
 </html>

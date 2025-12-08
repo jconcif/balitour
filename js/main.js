@@ -202,12 +202,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Language Detection & Switching
-    let currentLang = 'en'; // Default to English
+    // Language Detection & Switching
+    let currentLang = 'es'; // Default to Spanish as requested
     const userLang = navigator.language || navigator.userLanguage;
     const langSwitch = document.getElementById('lang-switch');
 
-    if (userLang.startsWith('es')) {
-        currentLang = 'es';
+    // Optional: Only switch if explicitly another supported language, otherwise keep Spanish
+    if (userLang.startsWith('en')) {
+        currentLang = 'en';
     } else if (userLang.startsWith('id')) {
         currentLang = 'id';
     }
@@ -341,22 +343,37 @@ document.addEventListener('DOMContentLoaded', () => {
         const hotel = document.getElementById('hotel').value;
         const lang = document.querySelector('input[name="language"]:checked').value;
 
-        // Construct message based on current language
-        let intro = "Hello Bali Tour! 👋";
-        if (currentLang === 'es') intro = "Hola Bali Tour! 👋";
-        if (currentLang === 'id') intro = "Halo Bali Tour! 👋";
+        // Create raw message with newlines using Unicode escapes for safe encoding
+        // 👋 = \uD83D\uDC4B (or \u{1F44B})
+        // 🗺️ = \uD83D\uDDFA\uFE0F
+        // 👤 = \uD83D\uDC64
+        // 📅 = \uD83D\uDCC5
+        // 👥 = \uD83D\uDC65
+        // 🏨 = \uD83C\uDFE8
+        // 🗣️ = \uD83D\uDDE3\uFE0F
 
-        // Create raw message with newlines
+        const emojiWave = '\uD83D\uDC4B';
+        const emojiMap = '\uD83D\uDDFA\uFE0F';
+        const emojiUser = '\uD83D\uDC64';
+        const emojiDate = '\uD83D\uDCC5';
+        const emojiGroup = '\uD83D\uDC65';
+        const emojiHotel = '\uD83C\uDFE8';
+        const emojiSpeak = '\uD83D\uDDE3\uFE0F';
+
+        let intro = `Hello Bali Tour! ${emojiWave}`;
+        if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;
+        if (currentLang === 'id') intro = `Halo Bali Tour! ${emojiWave}`;
+
         let messageBody = "";
         if (currentLang === 'es') {
-            messageBody = `\n\nQuiero reservar un tour:\n\n🗺️ *Tour:* ${tour}\n👤 *Nombre:* ${name}\n📅 *Fecha:* ${date}\n👥 *Pasajeros:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Idioma:* ${lang}\n\nEspero su confirmación. ¡Gracias!`;
+            messageBody = `\n\nQuiero reservar un tour:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}\n\nEspero su confirmación. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            messageBody = `\n\nI want to book a tour:\n\n🗺️ *Tour:* ${tour}\n👤 *Name:* ${name}\n📅 *Date:* ${date}\n👥 *Travelers:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Language:* ${lang}\n\nAwaiting confirmation. Thanks!`;
+            messageBody = `\n\nI want to book a tour:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}\n\nAwaiting confirmation. Thanks!`;
         } else {
-            messageBody = `\n\nSaya ingin memesan tur:\n\n🗺️ *Tour:* ${tour}\n👤 *Nama:* ${name}\n📅 *Tanggal:* ${date}\n👥 *Wisatawan:* ${pax}\n🏨 *Hotel:* ${hotel}\n🗣️ *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
+            messageBody = `\n\nSaya ingin memesan tur:\n\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
         }
 
-        // Encode the entire message at once to handle special chars and emojis correctly
+        // Encode the entire message
         const fullMessage = intro + messageBody;
         const finalMessage = encodeURIComponent(fullMessage);
 

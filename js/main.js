@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.pax': 'Número de Viajeros',
             'modal.label.hotel': 'Hotel / Lugar de Recogida',
             'modal.label.lang': 'Idioma del Tour',
-            'lang.es': 'Español (Sujeto a disponibilidad)',
-            'lang.en': 'Inglés (Chófer habla inglés)',
+            'lang.es': 'Español',
+            'lang.en': 'Inglés',
             'modal.btn.send': 'Enviar a WhatsApp',
             'modal.placeholder.name': 'Tu nombre',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak'
@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.pax': 'Number of Travelers',
             'modal.label.hotel': 'Hotel / Pickup Location',
             'modal.label.lang': 'Tour Language',
-            'lang.es': 'Spanish (Subject to availability)',
-            'lang.en': 'English (Fluent driver)',
+            'lang.es': 'Spanish',
+            'lang.en': 'English',
             'modal.btn.send': 'Send to WhatsApp',
             'modal.placeholder.name': 'Your name',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak'

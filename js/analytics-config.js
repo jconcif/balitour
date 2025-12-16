@@ -3,13 +3,10 @@
 
 const ANALYTICS_CONFIG = {
     // Google Analytics 4 - Replace with your GA4 Measurement ID
-    GA4_MEASUREMENT_ID: 'G-XXXXXXXXXX',
-
-    // Meta Pixel - Replace with your Facebook Pixel ID
-    META_PIXEL_ID: 'YOUR_PIXEL_ID_HERE',
+    GA4_MEASUREMENT_ID: 'G-HSVS7RPZP7',
 
     // Enable/disable tracking (set to true when you have real IDs)
-    ENABLED: false
+    ENABLED: true
 };
 
 // Google Analytics 4 Integration
@@ -43,7 +40,7 @@ function initMetaPixel() {
     !function (f, b, e, v, n, t, s) {
         if (f.fbq) return; n = f.fbq = function () {
             n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
         };
         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
         n.queue = []; t = b.createElement(e); t.async = !0;

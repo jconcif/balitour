@@ -330,25 +330,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Language Detection & Switching
-    // Language Detection & Switching
-    let currentLang = 'es'; // Default to Spanish as requested
-    const userLang = navigator.language || navigator.userLanguage;
-    const langSwitch = document.getElementById('lang-switch');
+    // Language Detection & Persistence
+    let currentLang = localStorage.getItem('selectedLang');
 
-    // Optional: Only switch if explicitly another supported language, otherwise keep Spanish
-    if (userLang.startsWith('en')) {
-        currentLang = 'en';
-    } else if (userLang.startsWith('id')) {
-        currentLang = 'id';
+    // If no stored preference, fallback to browser language or default to 'es'
+    if (!currentLang) {
+        currentLang = 'es'; // Default
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('en')) {
+            currentLang = 'en';
+        } else if (userLang.startsWith('id')) {
+            currentLang = 'id';
+        }
     }
 
-    // Set initial value of selector
-    langSwitch.value = currentLang;
+    const langSwitch = document.getElementById('lang-switch');
+    if (langSwitch) {
+        langSwitch.value = currentLang;
+    }
 
     // Apply Translations
     const updateLanguage = (lang) => {
         currentLang = lang;
+        localStorage.setItem('selectedLang', lang); // Persist selection
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang][key]) {

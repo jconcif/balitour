@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'faq.q4': '¿Qué idiomas hablan los guías?',
             'faq.a4': 'Nuestros guías hablan español, inglés e indonesio con fluidez. Solo indícanos tu idioma preferido al reservar.',
             'about.title': 'Sobre Nosotros',
-            'about.p1': 'Somos un equipo de guías balineses apasionados dedicados a compartir la belleza y cultura de nuestra isla. Con años de experiencia recibiendo viajeros de todo el mundo, creamos <strong>Bali Tour</strong> para ofrecer experiencias auténticas y personalizadas.',
+            'about.p1': 'Somos un equipo de guías balineses apasionados dedicados a compartir la belleza y cultura de nuestra isla. Con años de experiencia recibiendo viajeros de todo el mundo, creamos <strong>Cantik Tours</strong> para ofrecer experiencias auténticas y personalizadas.',
             'about.p2': 'Nuestra misión es simple: ayudarte a descubrir la verdadera esencia de Bali mientras te sientes cómodo y bien cuidado. Sin prisas, solo sonrisas, conexiones genuinas y recuerdos inolvidables.',
             'footer.desc': '¿Preguntas? Chatea con nosotros directamente para planificar tu viaje perfecto.',
             'footer.contact': 'Contáctanos',
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'faq.q4': 'What languages do guides speak?',
             'faq.a4': 'Our guides are fluent in Spanish, English, and Indonesian. Just let us know your preferred language when booking.',
             'about.title': 'About Us',
-            'about.p1': 'We are a team of passionate Balinese guides dedicated to sharing the beauty and culture of our island. With years of experience welcoming travelers from around the world, we created <strong>Bali Tour</strong> to offer authentic, personalized experiences.',
+            'about.p1': 'We are a team of passionate Balinese guides dedicated to sharing the beauty and culture of our island. With years of experience welcoming travelers from around the world, we created <strong>Cantik Tours</strong> to offer authentic, personalized experiences.',
             'about.p2': 'Our mission is simple: help you discover the true essence of Bali while feeling comfortable and well-cared for. No rush, just smiles, genuine connections, and unforgettable memories.',
             'footer.desc': 'Questions? Chat with us directly to plan your perfect trip.',
             'footer.contact': 'Contact Us',
@@ -382,9 +382,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const emojiSpeak = "-";
         const emojiTicket = "-";
 
-        let intro = `Hello Bali Tour! ${emojiWave}`;
-        if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;
-        if (currentLang === 'id') intro = `Halo Bali Tour! ${emojiWave}`;
+        let intro = `Hello Cantik Tours! ${emojiWave}`;
+        if (currentLang === 'es') intro = `Hola Cantik Tours! ${emojiWave}`;
+        if (currentLang === 'id') intro = `Halo Cantik Tours! ${emojiWave}`;
 
         let couponText = "";
         if (coupon) {

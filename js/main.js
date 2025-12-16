@@ -62,8 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.lang': 'Idioma del Tour',
             'lang.es': 'Español',
             'lang.en': 'Inglés',
+            'nav.guide': 'Guía de Viaje',
+            'modal.label.coupon': 'Cupón de Descuento (Opcional)',
+            'modal.placeholder.coupon': 'Ej: BALILOVER',
             'modal.btn.send': 'Enviar a WhatsApp',
-            'modal.placeholder.name': 'Tu nombre',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak'
         },
         en: {
@@ -127,8 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.label.lang': 'Tour Language',
             'lang.es': 'Spanish',
             'lang.en': 'English',
+            'nav.guide': 'Travel Guide',
+            'modal.label.coupon': 'Promo Code (Optional)',
+            'modal.placeholder.coupon': 'Ex: BALILOVER',
             'modal.btn.send': 'Send to WhatsApp',
-            'modal.placeholder.name': 'Your name',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak'
         },
         id: {
@@ -365,15 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pax = document.getElementById('pax').value;
         const hotel = document.getElementById('hotel').value;
         const lang = document.getElementById('tourLang').value;
-
-        // Create raw message with newlines using Unicode escapes for safe encoding
-        // 👋 = \uD83D\uDC4B (or \u{1F44B})
-        // 🗺️ = \uD83D\uDDFA\uFE0F
-        // 👤 = \uD83D\uDC64
-        // 📅 = \uD83D\uDCC5
-        // 👥 = \uD83D\uDC65
-        // 🏨 = \uD83C\uDFE8
-        // 🗣️ = \uD83D\uDDE3\uFE0F
+        const coupon = document.getElementById('coupon').value.trim().toUpperCase();
 
         // Fallback to simple text symbols to guarantee compatibility
         // Emoticons are removed to ensure clean message delivery first
@@ -384,17 +380,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const emojiGroup = "-";
         const emojiHotel = "-";
         const emojiSpeak = "-";
+        const emojiTicket = "-";
 
         let intro = `Hello Bali Tour! ${emojiWave}`;
         if (currentLang === 'es') intro = `Hola Bali Tour! ${emojiWave}`;
         if (currentLang === 'id') intro = `Halo Bali Tour! ${emojiWave}`;
 
+        let couponText = "";
+        if (coupon) {
+            // Add coupon line if exists
+            couponText = `\n${emojiTicket} *Cupón:* ${coupon}`;
+            if (currentLang === 'en') couponText = `\n${emojiTicket} *Code:* ${coupon}`;
+            if (currentLang === 'id') couponText = `\n${emojiTicket} *Kode:* ${coupon}`;
+        }
+
+        let messageBody = "";
         if (currentLang === 'es') {
-            messageBody = `\n\nHola, me gustaría recibir más información sobre este tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha tentativa:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}\n\nQuedo a la espera de los detalles. ¡Gracias!`;
+            messageBody = `\n\nHola, me gustaría recibir más información sobre este tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha tentativa:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}${couponText}\n\nQuedo a la espera de los detalles. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            messageBody = `\n\nHi, I would like more information about this tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Tentative Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}\n\nLooking forward to the details. Thanks!`;
+            messageBody = `\n\nHi, I would like more information about this tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Tentative Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}${couponText}\n\nLooking forward to the details. Thanks!`;
         } else {
-            messageBody = `\n\nHalo, saya ingin informasi lebih lanjut tentang tur ini:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}\n\nMenunggu konfirmasi. Terima kasih!`;
+            messageBody = `\n\nHalo, saya ingin informasi lebih lanjut tentang tur ini:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}${couponText}\n\nMenunggu konfirmasi. Terima kasih!`;
         }
 
         // Encode the entire message

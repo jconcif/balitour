@@ -56,8 +56,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('images/hero-bali.png'); background-size: cover; background-position: center;">
+    <section id="inicio" class="hero">
         <div class="container hero-content">
             <span class="urgency-badge" data-i18n="hero.badge">🔥 Limited Spots Available</span>
             <h1 data-i18n="hero.title">Discover Bali Your Way</h1>
@@ -216,44 +215,39 @@
                 <h2 data-i18n="reviews.title">What Our Travelers Say</h2>
             </div>
             <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
-                            alt="User">
-                        <div>
-                            <h4>Maria G.</h4>
-                            <span class="stars">★★★★★</span>
-                            <small style="color: #999;">Spain</small>
-                        </div>
+                <!-- Review 1 -->
+                <div class="review-card fade-in">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Carlos+M&background=1D5D4B&color=fff" alt="User"
+                            class="reviewer-avatar">
+                        <div class="reviewer-name">Carlos & Maria</div>
                     </div>
-                    <p data-i18n="review1.text">"Amazing experience! Our guide Wayan spoke perfect Spanish and took us
-                        to hidden gems we would never have found on our own. Highly recommend!"</p>
+                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
+                    <p class="review-text" data-i18n="review1.text">"Amazing experience! Our guide Wayan spoke perfect
+                        Spanish..."</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
-                            alt="User">
-                        <div>
-                            <h4>Sarah & James</h4>
-                            <span class="stars">★★★★★</span>
-                            <small style="color: #999;">Australia</small>
-                        </div>
+
+                <!-- Review 2 -->
+                <div class="review-card fade-in" style="transition-delay: 0.1s;">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Familia+L&background=C9A227&color=fff" alt="User"
+                            class="reviewer-avatar">
+                        <div class="reviewer-name">Familia López</div>
                     </div>
-                    <p data-i18n="review2.text">"Best decision of our trip! The guide was professional, the vehicle was
-                        comfortable, and the service was exceptional. Couldn't ask for more!"</p>
+                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
+                    <p class="review-text" data-i18n="review2.text">"Best decision of our trip! The guide was
+                        professional..."</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
-                            alt="User">
-                        <div>
-                            <h4>Thomas M.</h4>
-                            <span class="stars">★★★★★</span>
-                            <small style="color: #999;">Germany</small>
-                        </div>
+
+                <!-- Review 3 -->
+                <div class="review-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Alejandro&background=1D5D4B&color=fff" alt="User"
+                            class="reviewer-avatar">
+                        <div class="reviewer-name">Alejandro R.</div>
                     </div>
-                    <p data-i18n="review3.text">"We did the south route and it was magical. The sunset at Uluwatu and
-                        the seafood dinner they arranged in Jimbaran were unforgettable!"</p>
+                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
+                    <p class="review-text" data-i18n="review3.text">"We did the south route and it was magical..."</p>
                 </div>
             </div>
         </div>
@@ -386,7 +380,7 @@
     </a>
 
     <!-- Custom JS -->
-    <script src="js/main.js?v=17"></script>
+    <script src="js/main.js?v=18"></script>
 </body>
 
 </html>

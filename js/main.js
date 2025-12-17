@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'review1.text': '"Increíble. Wayan no solo fue un guía, fue un amigo. Nos explicó la cultura balinesa con una pasión contagiosa. 10/10."',
             'review2.text': '"El coche era nuevísimo y muy cómodo. Nos sentimos seguros y cuidados en todo momento. ¡Gracias Cantik Tours!"',
             'review3.text': '"Hicimos la ruta de las playas y fue mágico. La cena en Jimbaran que nos recomendaron fue el broche de oro."',
+            'review4.text': '"Como viajera sola, la seguridad era mi prioridad. Wayan me hizo sentir súper cómoda y protegida. ¡Una experiencia inolvidable!"',
+            'review5.text': '"Gracias a ellos evitamos las trampas turísticas y vimos el Bali auténtico. El templo en la selva fue lo mejor."',
+            'review6.text': '"Excelente relación calidad-precio. Un servicio de lujo a precio justo. Sin duda repetiremos."',
             'faq.title': 'Resolvemos tus Dudas',
             'faq.q1': '¿Las entradas están incluidas?',
             'faq.a1': 'No, el precio cubre transporte privado y servicio de guía. Las entradas a los templos se pagan por separado (aproximadamente 3-5€ por sitio).',
@@ -60,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.contact': 'Hablemos de tu Viaje',
             'footer.btn': 'Chat en WhatsApp',
             'footer.rights': 'Todos los derechos reservados.',
+            'footer.links': 'Enlaces Rápidos',
+            'footer.brand_desc': 'Tours privados auténticos en Bali con guías locales que hablan español e inglés.',
             'modal.title': 'Comienza tu Aventura',
             'modal.label.tour': 'Ruta o Interés',
             'modal.label.name': 'Nombre Completo',
@@ -74,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.placeholder.coupon': 'Ej: BALILOVER',
             'modal.btn.send': 'Enviar Solicitud',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak',
+            'gallery.title': 'Momentos en el Paraíso',
+            'gallery.subtitle': 'Síguenos en @CantikToursBali',
+            'gallery.btn': 'Ver Instagram',
             // Guide Page - ES
             'guide.hero.title': 'Guía Esencial de Bali',
             'guide.hero.subtitle': 'Todo lo que necesitas saber antes de aterrizar en la Isla de los Dioses. Visados, zonas y consejos locales.',
@@ -152,6 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'review1.text': '"Incredible. Wayan was not just a guide, but a friend. He explained Balinese culture with contagious passion."',
             'review2.text': '"The car was brand new and super comfortable. We felt safe and cared for every moment. Thanks Cantik Tours!"',
             'review3.text': '"We did the south beaches route and it was magical. The sunset dinner recommendation was the highlight."',
+            'review4.text': '"As a solo female traveler, safety was key. Wayan made me feel totally comfortable and safe. Unforgettable!"',
+            'review5.text': '"Thanks to them we avoided tourist traps and saw the real Bali. The jungle temple was the highlight."',
+            'review6.text': '"Excellent value for money. Luxury service at a fair price. Will definitely book again."',
             'faq.title': 'Common Questions',
             'faq.q1': 'Are entrance fees included?',
             'faq.a1': 'No, the price covers private transportation and guide service. Temple entrance fees are paid separately (approximately 3-5€ per site).',
@@ -167,7 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.desc': 'Your gateway to the magic of Indonesia. Experts in creating unforgettable memories.',
             'footer.contact': 'Let\'s Talk Travel',
             'footer.btn': 'Chat on WhatsApp',
+            'footer.links': 'Quick Links',
             'footer.rights': 'All rights reserved.',
+            'footer.brand_desc': 'Authentic private tours in Bali with local Spanish & English speaking guides.',
             'modal.title': 'Book Your Adventure',
             'modal.label.tour': 'Selected Tour',
             'modal.label.name': 'Full Name',
@@ -182,6 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.placeholder.coupon': 'Ex: BALILOVER',
             'modal.btn.send': 'Send to WhatsApp',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak',
+            'gallery.title': 'Moments in Paradise',
+            'gallery.subtitle': 'Follow us @CantikToursBali',
+            'gallery.btn': 'View Instagram',
             // Guide Page - EN
             'guide.hero.title': 'Essential Bali Guide',
             'guide.hero.subtitle': 'Everything you need to know before landing on the Island of Gods. Visas, zones, and local tips.',
@@ -259,6 +275,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'review1.text': '"Pengalaman luar biasa! Pemandu kami Wayan berbicara bahasa Spanyol dengan sempurna dan membawa kami ke permata tersembunyi yang tidak akan pernah kami temukan sendiri. Sangat direkomendasikan!"',
             'review2.text': '"Keputusan terbaik perjalanan kami! Pemandu profesional, kendaraan nyaman, dan layanan luar biasa. Tidak bisa meminta lebih!"',
             'review3.text': '"Kami melakukan rute selatan dan itu ajaib. Matahari terbenam di Uluwatu dan makan malam seafood yang mereka atur di Jimbaran tak terlupakan!"',
+            'review4.text': '"Sebagai pelancong wanita solo, keamanan adalah kunci. Wayan membuat saya merasa sangat nyaman dan aman."',
+            'review5.text': '"Berkat mereka kami menghindari jebakan turis dan melihat Bali yang asli."',
+            'review6.text': '"Nilai uang yang luar biasa. Layanan mewah dengan harga pantas."',
             'faq.title': 'Pertanyaan yang Sering Diajukan',
             'faq.q1': 'Apakah biaya masuk sudah termasuk?',
             'faq.a1': 'Tidak, harga mencakup transportasi pribadi dan layanan pemandu. Biaya masuk pura dibayar terpisah (sekitar 3-5€ per lokasi).',
@@ -274,7 +293,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.desc': 'Pertanyaan? Mengobrol dengan kami langsung untuk merencanakan perjalanan sempurna Anda.',
             'footer.contact': 'Hubungi Kami',
             'footer.btn': 'Chat di WhatsApp',
+            'footer.links': 'Tautan Cepat',
             'footer.rights': 'Hak cipta dilindungi.',
+            'footer.brand_desc': 'Tur pribadi otentik di Bali dengan pemandu lokal berbahasa Spanyol & Inggris.',
             'modal.title': 'Pesan Petualangan Anda',
             'modal.label.tour': 'Tur Dipilih',
             'modal.label.name': 'Nama Lengkap',
@@ -287,6 +308,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.btn.send': 'Kirim ke WhatsApp',
             'modal.placeholder.name': 'Nama Anda',
             'modal.placeholder.hotel': 'Cth: Hotel W, Seminyak',
+            'gallery.title': 'Momen di Surga',
+            'gallery.subtitle': 'Ikuti kami @CantikToursBali',
+            'gallery.btn': 'Lihat Instagram',
             // Guide Page - ID
             'guide.hero.title': 'Panduan Penting Bali',
             'guide.hero.subtitle': 'Segala hal yang perlu Anda ketahui sebelum mendarat di Pulau Dewata. Visa, zona, dan tips lokal.',
@@ -505,14 +529,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Fallback to simple text symbols to guarantee compatibility
         // Emoticons are removed to ensure clean message delivery first
-        const emojiWave = "";
-        const emojiMap = "-";
-        const emojiUser = "-";
-        const emojiDate = "-";
-        const emojiGroup = "-";
-        const emojiHotel = "-";
-        const emojiSpeak = "-";
-        const emojiTicket = "-";
+        const emojiWave = "👋";
+        const emojiMap = "🗺️";
+        const emojiUser = "👤";
+        const emojiDate = "📅";
+        const emojiGroup = "👥";
+        const emojiHotel = "🏨";
+        const emojiSpeak = "🗣️";
+        const emojiTicket = "🎟️";
 
         let intro = `Hello Cantik Tours! ${emojiWave}`;
         if (currentLang === 'es') intro = `Hola Cantik Tours! ${emojiWave}`;
@@ -571,4 +595,19 @@ document.addEventListener('DOMContentLoaded', () => {
     tourCards.forEach(card => {
         tourObserver.observe(card);
     });
+
+    // Reviews Slider Logic
+    const slider = document.querySelector('.reviews-slider');
+    const prevBtn = document.querySelector('.btn-prev');
+    const nextBtn = document.querySelector('.btn-next');
+
+    if (slider && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -360, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 360, behavior: 'smooth' });
+        });
+    }
 });

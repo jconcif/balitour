@@ -8,6 +8,14 @@
     <meta name="description"
         content="Guía completa para viajar a Bali. Visados, mejores zonas para alojarse (Ubud, Canggu, Uluwatu), moneda, enchufes y consejos locales.">
 
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cantiktours.com/guide.html">
+    <meta property="og:title" content="Guía Definitiva de Bali 2026 | Cantik Tours">
+    <meta property="og:description"
+        content="Todo lo que necesitas saber: Visados (VoA), zonas (Ubud, Canggu), precios y consejos de locales.">
+    <meta property="og:image" content="https://cantiktours.com/images/hero-bali.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +34,8 @@
         .guide-hero {
             height: 50vh;
             min-height: 400px;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bali.png');
+            /* Stronger, smoother gradient for better legibility without harsh shadows */
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('images/hero-bali.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -35,7 +44,6 @@
             text-align: center;
             color: white;
             margin-top: 60px;
-            /* Navbar height */
         }
 
         .article-card {
@@ -115,8 +123,10 @@
     <!-- Guide Hero -->
     <section class="guide-hero">
         <div class="container">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;" data-i18n="guide.hero.title">Guía Esencial de Bali</h1>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;" data-i18n="guide.hero.subtitle">Todo lo que
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700;"
+                data-i18n="guide.hero.title">Guía Esencial de Bali</h1>
+            <p style="font-size: 1.3rem; max-width: 600px; margin: 0 auto; color: #f0f0f0; opacity: 0.95;"
+                data-i18n="guide.hero.subtitle">Todo lo que
                 necesitas saber antes de
                 aterrizar en la Isla de los Dioses. Visados, zonas y consejos locales.</p>
         </div>
@@ -128,7 +138,7 @@
 
             <!-- Visado -->
             <article class="article-card" id="visado">
-                <i class="fas fa-passport article-icon"></i>
+                <!-- Icon removed for cleaner look -->
                 <h2 data-i18n="guide.visa.title">🛂 Visado para entrar a Indonesia (2025)</h2>
                 <p data-i18n="guide.visa.p1">Para la mayoría de nacionalidades (España, Chile, México, Argentina, etc.),
                     el proceso es muy
@@ -167,7 +177,7 @@
 
             <!-- Impuesto Turistico -->
             <article class="article-card">
-                <i class="fas fa-ticket-alt article-icon"></i>
+                <!-- Icon removed for cleaner look -->
                 <h2 data-i18n="guide.levy.title">💸 Impuesto Turístico (Bali Levy)</h2>
                 <p data-i18n="guide.levy.desc">Desde 2024, existe una tasa turística obligatoria para entrar a la isla
                     de Bali.</p>
@@ -179,7 +189,7 @@
 
             <!-- Zonas -->
             <article class="article-card" id="zonas">
-                <i class="fas fa-map-marked-alt article-icon"></i>
+                <!-- Icon removed for cleaner look -->
                 <h2 data-i18n="guide.zones.title">📍 ¿Dónde alojarse? Zonas principales</h2>
                 <p data-i18n="guide.zones.desc">Bali es más grande de lo que parece y el tráfico puede ser lento. Elegir
                     bien tu base es clave.</p>
@@ -222,7 +232,7 @@
 
             <!-- Consejos Rapidos -->
             <article class="article-card">
-                <i class="fas fa-lightbulb article-icon"></i>
+                <!-- Icon removed for cleaner look -->
                 <h2 data-i18n="guide.tips.title">💡 Tips Rápidos de Supervivencia</h2>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 15px;" data-i18n="guide.tip.currency">
@@ -260,18 +270,42 @@
     <footer id="contacto">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col" style="text-align: center; width: 100%;">
-                    <h4 data-i18n="footer.contact" style="margin-bottom: 1rem;">Contact Us</h4>
-                    <p style="margin-bottom: 1.5rem; opacity: 0.8;" data-i18n="footer.desc">Questions? Chat with us
-                        directly to plan your perfect trip.</p>
-                    <div style="display: flex; justify-content: center;">
-                        <a href="https://wa.me/6285940365407?text=Hola,%20vengo%20de%20su%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
-                            target="_blank" class="btn btn-primary contact-link"
-                            style="display: inline-flex; align-items: center; gap: 10px;">
-                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
-                            <span data-i18n="footer.btn">Chat on WhatsApp</span>
-                        </a>
+                <!-- Col 1: Brand -->
+                <div class="footer-col">
+                    <h4 class="logo" style="color: white; margin-bottom: 20px;">Cantik Tours</h4>
+                    <p class="footer-desc" style="text-align: left; margin-left: 0;" data-i18n="footer.brand_desc">
+                        Authentic private tours in Bali with local Spanish & English speaking guides.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer.links">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#tours" data-i18n="nav.tours">Tours</a></li>
+                        <li><a href="guide.html" data-i18n="nav.guide">Guide 2026</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i> +62 859 4036 5407</li>
+                        <li><i class="far fa-envelope"></i> hello@cantiktours.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubud, Bali, Indonesia</li>
+                    </ul>
+                    <a href="https://wa.me/6285940365407" target="_blank" class="btn btn-primary btn-sm"
+                        style="margin-top: 15px;">
+                        <span data-i18n="footer.btn">Chat on WhatsApp</span>
+                    </a>
                 </div>
             </div>
             <div class="copyright">

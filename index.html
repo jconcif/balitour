@@ -8,6 +8,14 @@
     <meta name="description"
         content="Discover Bali with expert local guides. Private tours, authentic experiences, and personalized service in your language.">
 
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cantiktours.com/">
+    <meta property="og:title" content="Cantik Tours | Bali Private Drivers & Guides">
+    <meta property="og:description"
+        content="Explore Bali's hidden gems with friendly local guides (Spanish/English). Flexible itineraries, fair prices.">
+    <meta property="og:image" content="https://cantiktours.com/images/hero-bali.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,32 +97,12 @@
                         full insurance for your peace of mind.</p>
                 </div>
             </div>
+
+
         </div>
     </section>
 
-    <!-- Trust Badges -->
-    <section class="section-padding" style="background-color: white;">
-        <div class="container">
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <i class="fas fa-certificate"></i>
-                    <span data-i18n="trust.certified">Certified Guides</span>
-                </div>
-                <div class="trust-badge">
-                    <i class="fas fa-star"></i>
-                    <span data-i18n="trust.rating">4.9★ Rating</span>
-                </div>
-                <div class="trust-badge">
-                    <i class="fas fa-users"></i>
-                    <span data-i18n="trust.travelers">5000+ Travelers</span>
-                </div>
-                <div class="trust-badge">
-                    <i class="fas fa-check-circle"></i>
-                    <span data-i18n="trust.satisfaction">100% Satisfaction</span>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Tours Section -->
     <section id="tours" class="section-padding">
@@ -128,7 +116,7 @@
                 <!-- Tour 1 -->
                 <div class="tour-card fade-in">
                     <div class="tour-image">
-                        <img src="images/tour-ubud.png" alt="Ubud Rice Terrace">
+                        <img src="images/tour-ubud.png" alt="Ubud Rice Terrace" loading="lazy">
                     </div>
                     <div class="tour-info">
                         <h3 data-i18n="tour1.title">Heart of Bali (Classic Ubud)</h3>
@@ -148,7 +136,7 @@
                 <!-- Tour 2 -->
                 <div class="tour-card fade-in">
                     <div class="tour-image">
-                        <img src="images/tour-lempuyang.png" alt="Lempuyang Temple Gate">
+                        <img src="images/tour-lempuyang.png" alt="Lempuyang Temple Gate" loading="lazy">
                     </div>
                     <div class="tour-info">
                         <h3 data-i18n="tour2.title">Gates of Heaven (East Route)</h3>
@@ -168,7 +156,7 @@
                 <!-- Tour 3 -->
                 <div class="tour-card fade-in">
                     <div class="tour-image">
-                        <img src="images/tour-uluwatu.png" alt="Uluwatu Cliff">
+                        <img src="images/tour-uluwatu.png" alt="Uluwatu Cliff" loading="lazy">
                     </div>
                     <div class="tour-info">
                         <h3 data-i18n="tour3.title">Sunset & Waves (South Route)</h3>
@@ -188,7 +176,7 @@
                 <!-- Tour 4 -->
                 <div class="tour-card fade-in">
                     <div class="tour-image">
-                        <img src="images/tour-waterfall.png" alt="Bali Waterfall">
+                        <img src="images/tour-waterfall.png" alt="Bali Waterfall" loading="lazy">
                     </div>
                     <div class="tour-info">
                         <h3 data-i18n="tour4.title">Northern Magic (Nature)</h3>
@@ -214,40 +202,82 @@
             <div class="section-title">
                 <h2 data-i18n="reviews.title">What Our Travelers Say</h2>
             </div>
-            <div class="reviews-grid">
-                <!-- Review 1 -->
-                <div class="review-card fade-in">
-                    <div class="reviewer">
-                        <img src="https://ui-avatars.com/api/?name=Carlos+M&background=1D5D4B&color=fff" alt="User"
-                            class="reviewer-avatar">
-                        <div class="reviewer-name">Carlos & Maria</div>
-                    </div>
-                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
-                    <p class="review-text" data-i18n="review1.text">"Amazing experience! Our guide Wayan spoke perfect
-                        Spanish..."</p>
-                </div>
+            <div class="reviews-container">
+                <button class="review-nav-btn btn-prev" aria-label="Previous Review"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="review-nav-btn btn-next" aria-label="Next Review"><i
+                        class="fas fa-chevron-right"></i></button>
 
-                <!-- Review 2 -->
-                <div class="review-card fade-in" style="transition-delay: 0.1s;">
-                    <div class="reviewer">
-                        <img src="https://ui-avatars.com/api/?name=Familia+L&background=C9A227&color=fff" alt="User"
-                            class="reviewer-avatar">
-                        <div class="reviewer-name">Familia López</div>
+                <div class="reviews-slider">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Carlos+M&background=1D5D4B&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Carlos & Maria</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review1.text">"Amazing experience! Our guide Wayan spoke
+                            perfect Spanish..."</p>
                     </div>
-                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
-                    <p class="review-text" data-i18n="review2.text">"Best decision of our trip! The guide was
-                        professional..."</p>
-                </div>
 
-                <!-- Review 3 -->
-                <div class="review-card fade-in" style="transition-delay: 0.2s;">
-                    <div class="reviewer">
-                        <img src="https://ui-avatars.com/api/?name=Alejandro&background=1D5D4B&color=fff" alt="User"
-                            class="reviewer-avatar">
-                        <div class="reviewer-name">Alejandro R.</div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Familia+L&background=C9A227&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Familia López</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review2.text">"Best decision of our trip! The guide was
+                            professional..."</p>
                     </div>
-                    <div class="stars" style="color: #F1C40F; margin: 10px 0;">★★★★★</div>
-                    <p class="review-text" data-i18n="review3.text">"We did the south route and it was magical..."</p>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Alejandro&background=1D5D4B&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Alejandro R.</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review3.text">"We did the south route and it was magical..."
+                        </p>
+                    </div>
+
+                    <!-- Review 4 (New) -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+J&background=C9A227&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Sarah Jenkins</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review4.text">"Como viajera sola, me sentí súper segura..."
+                        </p>
+                    </div>
+
+                    <!-- Review 5 (New) -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Marc+D&background=1D5D4B&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Marc Dubois</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review5.text">"Evitamos las trampas turísticas..."</p>
+                    </div>
+
+                    <!-- Review 6 (New) -->
+                    <div class="review-card">
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Jessica+W&background=C9A227&color=fff" alt="User"
+                                class="reviewer-avatar" loading="lazy">
+                            <div class="reviewer-name">Jessica W.</div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review6.text">"Gran valor por el precio..."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -284,19 +314,67 @@
         </div>
     </section>
 
-    <!-- About Us -->
     <section id="nosotros" class="section-padding about">
-        <div class="container about-content">
-            <div class="section-title">
-                <h2 data-i18n="about.title">About Us</h2>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1000"
+                        alt="Bali Local Guide" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h2 data-i18n="about.title">About Us</h2>
+                    </div>
+                    <p data-i18n="about.p1">We are a team of passionate Balinese guides dedicated to sharing the beauty
+                        and
+                        culture of our island. With years of experience welcoming travelers from around the world, we
+                        created
+                        <strong>Bali Tour</strong> to offer authentic, personalized experiences.
+                    </p>
+                    <p data-i18n="about.p2">Our mission is simple: help you discover the true essence of Bali while
+                        feeling
+                        comfortable and well-cared for. No rush, just smiles, genuine connections, and unforgettable
+                        memories.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5k+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p data-i18n="about.p1">We are a team of passionate Balinese guides dedicated to sharing the beauty and
-                culture of our island. With years of experience welcoming travelers from around the world, we created
-                <strong>Bali Tour</strong> to offer authentic, personalized experiences.
-            </p>
-            <p data-i18n="about.p2">Our mission is simple: help you discover the true essence of Bali while feeling
-                comfortable and well-cared for. No rush, just smiles, genuine connections, and unforgettable memories.
-            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding" style="background-color: #FAFAFA;">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="gallery.title">Moments in Paradise</h2>
+                <p data-i18n="gallery.subtitle">Follow us @CantikToursBali</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Items will be 1x1 squares -->
+                <div class="gallery-item"><img src="images/tour-ubud.png" alt="Bali Rice Terrace" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/hero-bali.png" alt="Bali Monkey Forest" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/tour-lempuyang.png" alt="Lempuyang Gates" loading="lazy">
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=500&q=60"
+                        alt="Bali Temple Ritual" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/tour-uluwatu.png" alt="Uluwatu Sunset" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/tour-waterfall.png" alt="Hidden Waterfall" loading="lazy">
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://instagram.com" target="_blank" class="btn btn-outline" data-i18n="gallery.btn">View
+                    Instagram</a>
+            </div>
         </div>
     </section>
 
@@ -304,18 +382,42 @@
     <footer id="contacto">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col" style="text-align: center; width: 100%;">
-                    <h4 data-i18n="footer.contact" style="margin-bottom: 1rem;">Contact Us</h4>
-                    <p style="margin-bottom: 1.5rem; opacity: 0.8;" data-i18n="footer.desc">Questions? Chat with us
-                        directly to plan your perfect trip.</p>
-                    <div style="display: flex; justify-content: center;">
-                        <a href="https://wa.me/6285940365407?text=Hola,%20vengo%20de%20su%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
-                            target="_blank" class="btn btn-primary contact-link"
-                            style="display: inline-flex; align-items: center; gap: 10px;">
-                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
-                            <span data-i18n="footer.btn">Chat on WhatsApp</span>
-                        </a>
+                <!-- Col 1: Brand -->
+                <div class="footer-col">
+                    <h4 class="logo" style="color: white; margin-bottom: 20px;">Cantik Tours</h4>
+                    <p class="footer-desc" style="text-align: left; margin-left: 0;" data-i18n="footer.brand_desc">
+                        Authentic private tours in Bali with local Spanish & English speaking guides.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer.links">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#tours" data-i18n="nav.tours">Tours</a></li>
+                        <li><a href="guide.html" data-i18n="nav.guide">Guide 2026</a></li>
+                        <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i> +62 859 4036 5407</li>
+                        <li><i class="far fa-envelope"></i> hello@cantiktours.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ubud, Bali, Indonesia</li>
+                    </ul>
+                    <a href="https://wa.me/6285940365407" target="_blank" class="btn btn-primary btn-sm"
+                        style="margin-top: 15px;">
+                        <span data-i18n="footer.btn">Chat on WhatsApp</span>
+                    </a>
                 </div>
             </div>
             <div class="copyright">

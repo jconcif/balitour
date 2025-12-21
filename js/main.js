@@ -8,47 +8,54 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'Nosotros',
             'nav.contact': 'Contacto',
-            'hero.badge': '🔥 Plazas Limitadas',
-            'hero.title': 'Descubre Bali a Tu Manera',
-            'hero.subtitle': 'Experiencias auténticas con guías locales expertos. Tours privados adaptados a tus intereses en tu idioma preferido.',
-            'hero.cta': 'Explorar Tours',
-            'value.guides.title': 'Guías Multilingües',
-            'value.guides.desc': 'Guías locales expertos que hablan español, inglés e indonesio con fluidez. Sin barreras de idioma, solo conexiones auténticas.',
+            'hero.badge': 'Agenda abierta Enero 2026',
+            'hero.title': 'Bali no se visita, se vive.',
+            'hero.subtitle': 'Descubre la esencia de la isla a través de guías locales que conocen cada rincón y te muestran un Bali auténtico, cercano y sin prisas.',
+            'hero.cta': 'Planear mi viaje a Bali',
+            'hero.cta_micro': 'Respuesta en menos de 24h · Grupos reducidos para una experiencia real',
+            'value.guides.title': 'Guías Locales Expertos',
+            'value.guides.desc': 'Nuestros guías conocen Bali a fondo tras años recorriendo la isla, explorando rutas, templos y rincones menos turísticos, para ofrecerte una experiencia auténtica y cercana.',
             'value.friendly.title': 'Servicio Personalizado',
-            'value.friendly.desc': 'Te tratamos como familia. Itinerarios flexibles y hospitalidad cálida en el corazón de Bali.',
-            'value.safety.title': 'Seguridad Garantizada',
-            'value.safety.desc': 'Conductores profesionales, vehículos cómodos con aire acondicionado y seguro completo para tu tranquilidad.',
+            'value.friendly.desc': 'Viajes diseñados a tu ritmo, con flexibilidad y atención real. Te acompañamos como lo haría un amigo local, cuidando cada detalle para que solo te preocupes de disfrutar.',
+            'value.safety.title': 'Seguridad y Tranquilidad',
+            'value.safety.desc': 'Conductores profesionales, vehículos cómodos y una organización pensada para tu bienestar. Explora Bali con calma, confianza y total tranquilidad.',
             'trust.certified': 'Guías Certificados',
             'trust.rating': '4.9★ Valoración',
             'trust.travelers': '5000+ Viajeros',
             'trust.satisfaction': '100% Satisfacción',
-            'tours.title': 'Nuestros Tours Más Populares',
-            'tours.subtitle': 'Experiencias cuidadosamente diseñadas para descubrir la magia de Bali',
-            'trust.message': '✨ Reserva ahora y paga al finalizar el tour. Sin depósitos.',
+            'tours.title': 'Nuestras Rutas Recomendadas',
+            'tours.subtitle': 'Selección de los mejores itinerarios, personalizables para ti.',
+            'trust.message': '✨ Reserva ahora y paga al finalizar el tour.',
             'tour1.title': 'Corazón de Bali (Ubud Clásico)',
             'tour1.desc': 'Explora impresionantes terrazas de arroz, el sagrado bosque de los monos y templos antiguos en el corazón cultural de Bali.',
             'tour2.title': 'Puertas del Cielo (Ruta Este)',
             'tour2.desc': 'Captura la icónica foto del templo Lempuyang, visita el palacio de agua Tirta Gangga y descubre playas de arena negra.',
             'tours.title': 'Nuestras Rutas Exclusivas',
             'tours.subtitle': 'Selección de los mejores itinerarios, personalizables para ti.',
-            'tour1.title': 'El Corazón de Bali (Ubud)',
-            'tour1.desc': 'Sumérgete en la espiritualidad y naturaleza. Bosque de los Monos, Terrazas de Tegalalang y Templos Sagrados.',
-            'tour2.title': 'Templo Madre & Volcanes',
-            'tour2.desc': 'La majestuosidad del Monte Batur y el sagrado templo de Besakih. Vistas que cortan la respiración.',
-            'tour3.title': 'Playas del Sur & Uluwatu',
-            'tour3.desc': 'Arena blanca, acantilados dramáticos y la danza de fuego Kecak al atardecer.',
-            'tour4.title': 'Magia del Norte (Naturaleza)',
-            'tour4.desc': 'Descubre cascadas impresionantes, lagos gemelos serenos y el icónico templo flotante Ulun Danu Beratan.',
+            'tour1.title': 'El Corazón de Bali',
+            'tour1.desc': 'Siente la humedad de la selva, el susurro de los templos al amanecer y el verde infinito de las terrazas de arroz en un día sin prisas.',
+            'tour2.title': 'Puertas del Cielo y Magia del Este',
+            'tour2.desc': 'Camina entre el agua sagrada de Tirta Gangga y contempla la majestuosidad de Lempuyang antes de que lleguen las multitudes.',
+            'tour3.title': 'Atardeceres y Acantilados',
+            'tour3.desc': 'El rugido del océano en Uluwatu, la mística danza Kecak y una cena bajo las estrellas en la arena de Jimbaran.',
+            'tour4.title': 'Naturaleza Salvaje del Norte',
+            'tour4.desc': 'Cascadas escondidas donde solo llega el sonido del agua y templos flotantes que parecen suspendidos en el tiempo.',
             'tour.price': 'desde 60€ / día',
             'tour.btn': 'Consultar Disponibilidad',
-            'btn.book': 'Reservar Ahora',
-            'reviews.title': 'Experiencias de Nuestros Viajeros',
-            'review1.text': '"Increíble. Wayan no solo fue un guía, fue un amigo. Nos explicó la cultura balinesa con una pasión contagiosa. 10/10."',
-            'review2.text': '"El coche era nuevísimo y muy cómodo. Nos sentimos seguros y cuidados en todo momento. ¡Gracias Cantik Tours!"',
-            'review3.text': '"Hicimos la ruta de las playas y fue mágico. La cena en Jimbaran que nos recomendaron fue el broche de oro."',
-            'review4.text': '"Como viajera sola, la seguridad era mi prioridad. Wayan me hizo sentir súper cómoda y protegida. ¡Una experiencia inolvidable!"',
-            'review5.text': '"Gracias a ellos evitamos las trampas turísticas y vimos el Bali auténtico. El templo en la selva fue lo mejor."',
-            'review6.text': '"Excelente relación calidad-precio. Un servicio de lujo a precio justo. Sin duda repetiremos."',
+            'btn.book': 'Consultar disponibilidad',
+            'reviews.title': 'Historias de nuestros viajeros',
+            'review1.text': '"Increíble. Wayan no solo fue un guía, sino el amigo que nos abrió las puertas de su cultura. Fue el alma de nuestro viaje."',
+            'review1.meta': 'Carlos & Maria — Luna de miel, España',
+            'review2.text': '"La tranquilidad de viajar con expertos. Coche impecable y un trato humano que ya no se encuentra en las agencias grandes."',
+            'review2.meta': 'Familia López — Viaje familiar, México',
+            'review3.text': '"Uluwatu fue mágico. Las recomendaciones locales nos hicieron evitar las trampas para turistas. Un 10."',
+            'review3.meta': 'Alejandro R. — Viajero solo, Argentina',
+            'review4.text': '"Seguridad y calidez. Como mujer viajando sola, buscaba confianza y encontré una familia en Bali."',
+            'review4.meta': 'Elena G. — Viajera solo, España',
+            'review5.text': '"Bali auténtico. Las cascadas del norte sin nadie alrededor fueron el momento más especial de nuestra vida."',
+            'review5.meta': 'Pablo & Ana — Aniversario, Chile',
+            'review6.text': '"Un servicio boutique a un precio honesto. No es un tour, es una experiencia diseñada con el corazón."',
+            'review6.meta': 'Laura M. — Grupo de amigas, España',
             'faq.title': 'Resolvemos tus Dudas',
             'faq.q1': '¿Las entradas están incluidas?',
             'faq.a1': 'No, el precio cubre transporte privado y servicio de guía. Las entradas a los templos se pagan por separado (aproximadamente 3-5€ por sitio).',
@@ -56,11 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'faq.a2': 'El pago se realiza en efectivo (Rupias Indonesias o Euros) directamente a tu guía al final del tour. También aceptamos transferencias bancarias.',
             'faq.q3': '¿Puedo personalizar mi tour?',
             'faq.a3': '¡Por supuesto! Todos nuestros tours son privados y flexibles. Podemos adaptar el itinerario según tus intereses y preferencias.',
-            'faq.q4': '¿Qué idiomas hablan los guías?',
-            'faq.a4': 'Nuestros guías hablan español, inglés e indonesio con fluidez. Solo indícanos tu idioma preferido al reservar.',
+            'faq.q4': '¿En qué idioma se realizan los tours?',
+            'faq.a4': 'Los tours se realizan en inglés. Español disponible bajo solicitud mediante traductor.',
             'about.title': 'Nuestra Esencia',
-            'about.p1': 'Somos "Cantik Tours", un colectivo de guías balineses apasionados por mostrar el alma de nuestra isla. Cantik significa "Hermoso" en indonesio, y eso es lo que queremos compartir contigo.',
-            'about.p2': 'Huimos del turismo de masas. Preferimos las conexiones reales, los templos tranquilos y las sonrisas genuinas. Viajar con nosotros es viajar con amigos locales.',
+            'about.p1': 'No vendemos transporte, compartimos nuestro hogar. Cantik Tours nació para rescatar el turismo humano: sin prisas, con propósito y con el respeto que solo un local puede enseñarte.',
+            'about.p2': 'Creemos en los grupos pequeños, en las conversaciones reales y en mostrarte el Bali que no sale en las postales genéricas. Diseñado en Bali, guiado por locales.',
             'footer.desc': 'Tu puerta de entrada a la magia de Indonesia. Expertos en crear recuerdos imborrables.',
             'footer.contact': 'Hablemos de tu Viaje',
             'footer.btn': 'Chat en WhatsApp',
@@ -68,19 +75,21 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.links': 'Enlaces Rápidos',
             'footer.brand_desc': 'Tours privados auténticos en Bali con guías locales que hablan español e inglés.',
             'modal.title': 'Comienza tu Aventura',
+            'modal.subtitle': 'Confirmaremos los detalles contigo. Para reservar tu día, se solicita un pequeño depósito; el resto se paga al finalizar el tour.',
             'modal.label.tour': 'Ruta o Interés',
             'modal.label.name': 'Nombre Completo',
             'modal.label.date': 'Fecha Tentativa',
             'modal.label.pax': 'Nº Personas',
-            'modal.label.hotel': 'Hotel / Zona (Opcional)',
+            'modal.label.hotel': 'Hotel / Lugar de Recogida',
             'modal.label.lang': 'Idioma Preferido',
             'lang.es': 'Español',
             'lang.en': 'Inglés',
             'nav.guide': 'Bali Guía 2026',
-            'modal.label.coupon': 'Cupón (Si tienes)',
+            'modal.label.coupon': 'Cupón (Opcional)',
             'modal.placeholder.coupon': 'Ej: BALILOVER',
             'modal.btn.send': 'Enviar Solicitud',
             'modal.placeholder.hotel': 'Ej: Hotel W, Seminyak',
+            'modal.placeholder.name': 'Tu nombre',
             'gallery.title': 'Momentos en el Paraíso',
             'gallery.subtitle': 'Síguenos en @CantikToursBali',
             'gallery.btn': 'Ver Instagram',
@@ -101,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.levy.title': '💸 Impuesto Turístico (Bali Levy)',
             'guide.levy.desc': 'Desde 2024, existe una tasa turística obligatoria para entrar a la isla de Bali.',
             'guide.levy.cost': '<strong>Costo:</strong> 150.000 IDR (aprox. 9€) por persona.',
-            'guide.levy.rec': 'Se recomienda pagarlo online antes de viajar a través de la web o app "Love Bali" para agilizar la salida del aeropuerto, aunque también suelen haber mostradores allí.',
+            'guide.levy.rec': 'Se recomienda pagarlo online antes de viajar a través de la web oficial "Love Bali" para agilizar tu salida del aeropuerto.',
             'guide.zones.title': '📍 ¿Dónde alojarse? Zonas principales',
             'guide.zones.desc': 'Bali es más grande de lo que parece y el tráfico puede ser lento. Elegir bien tu base es clave.',
             'guide.zone.ubud.title': '🌿 Ubud (Centro/Cultura)',
@@ -124,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.cta.title': '¿Listo para explorar la isla?',
             'guide.cta.desc': 'Deja que nos encarguemos del transporte y los detalles.',
             'guide.cta.btn': 'Ver Tours Disponibles',
+            'guide.cta.btn_hero': 'Empezar a leer',
             'guide.internet.title': '🌐 Internet: ¿Cómo estar conectado?',
             'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
             'guide.internet.esim_desc': 'Lo más cómodo. La instalas antes de viajar y tienes internet nada más aterrizar. Ideal si tu teléfono es moderno.',
@@ -143,41 +153,48 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'Q&A',
             'nav.about': 'About Us',
             'nav.contact': 'Contact',
-            'hero.badge': '🔥 Limited Availability for 2025',
-            'hero.title': 'Bali: Luxury, Culture & Freedom',
-            'hero.subtitle': 'Experience the "Island of Gods" at your own pace with private drivers and local experts.',
-            'hero.cta': 'Design My Trip',
-            'value.1.title': '100% Flexibility',
-            'value.1.desc': 'Your trip, your rules. You decide the timing and stops. We make it happen.',
-            'value.2.title': 'Local Experts',
-            'value.2.desc': 'Deep cultural connection without language barriers. Friendly & knowledgeable.',
-            'value.3.title': 'Premium Transport',
-            'value.3.desc': 'Modern vehicles with AC, full comfort, and unlimited refreshments.',
+            'hero.badge': 'Open Booking January 2026',
+            'hero.title': 'Bali isn’t just visited, it’s lived.',
+            'hero.subtitle': 'Discover the essence of the island through local guides who know every corner and show you an authentic, close, and unhurried Bali.',
+            'hero.cta': 'Plan my Bali trip',
+            'hero.cta_micro': 'Response in under 24h · Small groups for a real experience',
+            'value.guides.title': 'Expert Local Guides',
+            'value.guides.desc': 'Our guides know Bali deeply after years of exploring the island, discovering routes, temples, and hidden gems to offer you an authentic and close experience.',
+            'value.friendly.title': 'Personalized Service',
+            'value.friendly.desc': 'Trips designed at your pace, with flexibility and genuine attention. We accompany you like a local friend would, taking care of every detail so you only worry about enjoying.',
+            'value.safety.title': 'Safety and Peace of Mind',
+            'value.safety.desc': 'Professional drivers, comfortable vehicles, and an organization designed for your well-being. Explore Bali with calm, confidence, and total peace.',
             'trust.certified': 'Certified Guides',
             'trust.rating': '4.9★ Rating',
             'trust.travelers': '5000+ Travelers',
             'trust.satisfaction': '100% Satisfaction',
-            'tours.title': 'Exclusive Itineraries',
-            'tours.subtitle': 'Curated selection of the best routes, fully customizable.',
-            'trust.message': '✨ Book now, pay later. No deposit required.',
-            'tour1.title': 'The Heart of Bali (Ubud)',
-            'tour1.desc': 'Immerse in spirituality. Monkey Forest, Rice Terraces, and Sacred Temples.',
-            'tour2.title': 'Mother Temple & Volcanoes',
-            'tour2.desc': 'Majestic Mt. Batur views and the sacred Besakih Temple. Breath-taking scenery.',
-            'tour3.title': 'South Beaches & Uluwatu',
-            'tour3.desc': 'White sands, dramatic cliffs, and the Kecak fire dance at sunset.',
-            'tour4.title': 'Northern Magic (Nature)',
-            'tour4.desc': 'Discover breathtaking waterfalls, serene twin lakes, and the iconic floating temple Ulun Danu Beratan.',
+            'tours.title': 'Our Recommended Routes',
+            'tours.subtitle': 'Selection of the best itineraries, customizable for you.',
+            'trust.message': '✨ Book now and pay at the end of the tour.',
+            'tour1.title': 'The Heart of Bali',
+            'tour1.desc': 'Feel the jungle’s breath and the whisper of ancient temples at dawn. An unhurried day through infinite rice terraces.',
+            'tour2.title': 'Gates of Heaven & Eastern Magic',
+            'tour2.desc': 'Walk through the sacred waters of Tirta Gangga and witness the majesty of Lempuyang as it was meant to be seen.',
+            'tour3.title': 'Sunsets & Dramatic Cliffs',
+            'tour3.desc': 'The roar of the ocean in Uluwatu, the mystical Kecak dance, and a seafood dinner under the stars in Jimbaran.',
+            'tour4.title': 'Northern Wild Nature',
+            'tour4.desc': 'Hidden waterfalls where only the sound of water remains, and floating temples that seem suspended in time.',
             'tour.price': 'from 60€ / day',
             'tour.btn': 'Check Availability',
-            'btn.book': 'Book Now',
+            'btn.book': 'Check availability',
             'reviews.title': 'Traveler Stories',
-            'review1.text': '"Incredible. Wayan was not just a guide, but a friend. He explained Balinese culture with contagious passion."',
-            'review2.text': '"The car was brand new and super comfortable. We felt safe and cared for every moment. Thanks Cantik Tours!"',
-            'review3.text': '"We did the south beaches route and it was magical. The sunset dinner recommendation was the highlight."',
-            'review4.text': '"As a solo female traveler, safety was key. Wayan made me feel totally comfortable and safe. Unforgettable!"',
-            'review5.text': '"Thanks to them we avoided tourist traps and saw the real Bali. The jungle temple was the highlight."',
-            'review6.text': '"Excellent value for money. Luxury service at a fair price. Will definitely book again."',
+            'review1.text': '"Incredible. Wayan was not just a guide, but a friend. He was the soul of our trip."',
+            'review1.meta': 'Carlos & Maria — Honeymoon, Spain',
+            'review2.text': '"Peace of mind. Brand new car and a human touch you just don’t find with big agencies anymore."',
+            'review2.meta': 'Family López — Family Trip, Mexico',
+            'review3.text': '"Uluwatu was magical. Local recommendations helped us avoid all the tourist traps. 10/10."',
+            'review3.meta': 'Alejandro R. — Solo Traveler, Argentina',
+            'review4.text': '"As a solo female traveler, Wayan made me feel like family. Safe, respected, and truly cared for."',
+            'review4.meta': 'Elena G. — Solo Traveler, Spain',
+            'review5.text': '"Authentic Bali. The northern waterfalls with no one else around was the highlight of our lives."',
+            'review5.meta': 'Pablo & Ana — Anniversary, Chile',
+            'review6.text': '"Boutique service at an honest price. It’s not a tour, it’s a memory created with heart."',
+            'review6.meta': 'Laura M. — Group of friends, Spain',
             'faq.title': 'Common Questions',
             'faq.q1': 'Are entrance fees included?',
             'faq.a1': 'No, the price covers private transportation and guide service. Temple entrance fees are paid separately (approximately 3-5€ per site).',
@@ -185,31 +202,33 @@ document.addEventListener('DOMContentLoaded', () => {
             'faq.a2': 'Payment is made in cash (Indonesian Rupiah or Euros) directly to your guide at the end of the tour. We also accept bank transfers.',
             'faq.q3': 'Can I customize my tour?',
             'faq.a3': 'Absolutely! All our tours are private and flexible. We can adapt the itinerary to match your interests and preferences.',
-            'faq.q4': 'What languages do guides speak?',
-            'faq.a4': 'Our guides are fluent in Spanish, English, and Indonesian. Just let us know your preferred language when booking.',
+            'faq.q4': 'What language are the tours conducted in?',
+            'faq.a4': 'Tours are conducted in English. Spanish available upon request with a translator.',
             'about.title': 'Our Essence',
-            'about.p1': 'We are "Cantik Tours", a collective of Balinese guides passionate about showing the soul of our island. Cantik means "Beautiful", and that is what we share.',
-            'about.p2': 'We avoid mass tourism. We prefer real connections, quiet temples, and genuine smiles.',
+            'about.p1': 'We don’t sell transportation; we share our home. Cantik Tours was born to rescue human tourism: unhurried, purposeful, and with the respect only a local can show you.',
+            'about.p2': 'We believe in small groups, real conversations, and showing you the Bali that doesn’t fit on a generic postcard. Designed in Bali, guided by locals.',
             'footer.desc': 'Your gateway to the magic of Indonesia. Experts in creating unforgettable memories.',
             'footer.contact': 'Let\'s Talk Travel',
             'footer.btn': 'Chat on WhatsApp',
             'footer.links': 'Quick Links',
             'footer.rights': 'All rights reserved.',
             'footer.brand_desc': 'Authentic private tours in Bali with local Spanish & English speaking guides.',
-            'modal.title': 'Book Your Adventure',
-            'modal.label.tour': 'Selected Tour',
+            'modal.title': 'Start Your Adventure',
+            'modal.subtitle': 'We’ll confirm the details with you. To secure your day, a small deposit is required; the rest is paid at the end of the tour.',
+            'modal.label.tour': 'Route or Interest',
             'modal.label.name': 'Full Name',
-            'modal.label.date': 'Preferred Date',
+            'modal.label.date': 'Tentative Date',
             'modal.label.pax': 'Number of Travelers',
             'modal.label.hotel': 'Hotel / Pickup Location',
-            'modal.label.lang': 'Tour Language',
+            'modal.label.lang': 'Preferred Language',
             'lang.es': 'Spanish',
             'lang.en': 'English',
             'nav.guide': 'Bali Guide 2026',
-            'modal.label.coupon': 'Promo Code (Optional)',
+            'modal.label.coupon': 'Coupon (Optional)',
             'modal.placeholder.coupon': 'Ex: BALILOVER',
-            'modal.btn.send': 'Send to WhatsApp',
+            'modal.btn.send': 'Send Request',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak',
+            'modal.placeholder.name': 'Your name',
             'gallery.title': 'Moments in Paradise',
 
             // Guide Page - EN
@@ -252,6 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.cta.title': 'Ready to explore the island?',
             'guide.cta.desc': 'Let us handle the transport and details.',
             'guide.cta.btn': 'View Available Tours',
+            'guide.cta.btn_hero': 'Start Reading',
             'guide.internet.title': '🌐 Internet: How to Stay Connected?',
             'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
             'guide.internet.esim_desc': 'The most convenient. Install it before traveling and have internet as soon as you land. Best for modern phones.',
@@ -271,23 +291,24 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'Tentang Kami',
             'nav.contact': 'Kontak',
-            'hero.badge': '🔥 Tempat Terbatas',
-            'hero.title': 'Temukan Bali dengan Cara Anda',
-            'hero.subtitle': 'Pengalaman autentik dengan pemandu lokal ahli. Tur pribadi disesuaikan dengan minat Anda dalam bahasa pilihan Anda.',
+            'hero.badge': 'Agenda Terbuka Januari 2026',
+            'hero.title': 'Bali bukan sekadar dikunjungi, tapi dihidupi.',
+            'hero.subtitle': 'Temukan esensi pulau ini melalui pemandu lokal yang mengenal setiap sudut dan menunjukkan Bali yang autentik, dekat, dan santai.',
             'hero.cta': 'Jelajahi Tur',
-            'value.guides.title': 'Pemandu Multibahasa',
-            'value.guides.desc': 'Pemandu lokal ahli yang fasih berbahasa Spanyol, Inggris, dan Indonesia. Tanpa hambatan bahasa, hanya koneksi autentik.',
+            'hero.cta_micro': 'Respon kurang dari 24 jam · Grup kecil untuk pengalaman nyata',
+            'value.guides.title': 'Pemandu Lokal Ahli',
+            'value.guides.desc': 'Pemandu kami mengenal Bali secara mendalam setelah bertahun-tahun menjelajahi pulau, menemukan rute, pura, dan sudut-sudut rahasia untuk menawarkan pengalaman yang autentik dan dekat.',
             'value.friendly.title': 'Layanan Personal',
-            'value.friendly.desc': 'Kami memperlakukan Anda seperti keluarga. Itinerary fleksibel dan keramahan hangat di jantung Bali.',
-            'value.safety.title': 'Keamanan Terjamin',
-            'value.safety.desc': 'Pengemudi profesional, kendaraan ber-AC yang nyaman, dan asuransi penuh untuk ketenangan pikiran Anda.',
+            'value.friendly.desc': 'Perjalanan yang dirancang sesuai ritme Anda, dengan fleksibilitas dan perhatian nyata. Kami menemani Anda layaknya teman lokal, menjaga setiap detail agar Anda hanya fokus menikmati.',
+            'value.safety.title': 'Keamanan dan Ketenangan',
+            'value.safety.desc': 'Pengemudi profesional, kendaraan nyaman, dan organisasi yang dirancang untuk kesejahteraan Anda. Agar Anda menjelajahi Bali dengan tenang, percaya diri, dan penuh kedamaian.',
             'trust.certified': 'Pemandu Bersertifikat',
             'trust.rating': '4.9★ Rating',
             'trust.travelers': '5000+ Wisatawan',
             'trust.satisfaction': '100% Kepuasan',
-            'tours.title': 'Tur Paling Populer Kami',
-            'tours.subtitle': 'Pengalaman yang dirancang dengan hati-hati untuk menemukan keajaiban Bali',
-            'trust.message': '✨ Pesan sekarang, bayar nanti. Tanpa deposit.',
+            'tours.title': 'Rute Rekomendasi Kami',
+            'tours.subtitle': 'Pilihan itinerary terbaik, dapat disesuaikan untuk Anda.',
+            'trust.message': '✨ Pesan sekarang dan bayar di akhir tur.',
             'tour1.title': 'Jantung Bali (Ubud Klasik)',
             'tour1.desc': 'Jelajahi sawah terasering yang menakjubkan, hutan monyet suci, dan pura kuno di jantung budaya Bali.',
             'tour2.title': 'Gerbang Surga (Rute Timur)',
@@ -311,8 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'faq.a2': 'Pembayaran dilakukan secara tunai (Rupiah Indonesia atau Euro) langsung kepada pemandu Anda di akhir tur. Kami juga menerima transfer bank.',
             'faq.q3': 'Bisakah saya menyesuaikan tur saya?',
             'faq.a3': 'Tentu saja! Semua tur kami bersifat pribadi dan fleksibel. Kami dapat menyesuaikan itinerary sesuai minat dan preferensi Anda.',
-            'faq.q4': 'Bahasa apa yang digunakan pemandu?',
-            'faq.a4': 'Pemandu kami fasih berbahasa Spanyol, Inggris, dan Indonesia. Beri tahu kami bahasa pilihan Anda saat memesan.',
+            'faq.q4': 'Bahasa apa yang digunakan untuk tur?',
+            'faq.a4': 'Tur dilakukan dalam bahasa Inggris. Bahasa Spanyol tersedia atas permintaan dengan penerjemah.',
             'about.title': 'Tentang Kami',
             'about.p1': 'Kami adalah tim pemandu Bali yang berdedikasi untuk berbagi keindahan dan budaya pulau kami. Dengan pengalaman bertahun-tahun menyambut wisatawan dari seluruh dunia, kami menciptakan <strong>Bali Tour</strong> untuk menawarkan pengalaman autentik dan personal.',
             'about.p2': 'Misi kami sederhana: membantu Anda menemukan esensi sejati Bali sambil merasa nyaman dan terawat dengan baik. Tanpa terburu-buru, hanya senyuman, koneksi tulus, dan kenangan tak terlupakan.',
@@ -377,6 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.cta.title': 'Siap menjelajahi pulau?',
             'guide.cta.desc': 'Biar kami yang urus transportasi dan detailnya.',
             'guide.cta.btn': 'Lihat Tur Tersedia',
+            'guide.cta.btn_hero': 'Mulai Membaca',
             'guide.internet.title': '🌐 Internet: Cara Tetap Terhubung?',
             'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
             'guide.internet.esim_desc': 'Paling praktis. Instal sebelum berangkat dan langsung aktif saat mendarat.',
@@ -516,11 +538,88 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookingForm = document.getElementById('bookingForm');
 
     // Set minimum date to today (prevent past dates)
-    const dateInput = document.getElementById('date');
-    if (dateInput) {
+    const dateInputInit = document.getElementById('date');
+    if (dateInputInit) {
         const today = new Date().toISOString().split('T')[0];
-        dateInput.min = today;
+        dateInputInit.min = today;
     }
+
+    // ===== BLOCKED DATES CONFIGURATION =====
+    // Option 1: Block individual dates (YYYY-MM-DD format)
+    // Example: ['2026-01-15', '2026-02-20', '2026-03-10']
+    const blockedDates = [
+        // Add your blocked dates here
+        // '2026-02-20',
+    ];
+
+    // Option 2: Block date ranges
+    // Each range is an object with 'start' and 'end' dates
+    // Example: { start: '2026-12-20', end: '2026-12-31' } blocks from Dec 20 to Dec 31
+    const blockedDateRanges = [
+        // Add your date ranges here
+        // { start: '2025-12-20', end: '2026-01-10' },  // Christmas holidays
+        { start: '2026-06-14', end: '2026-06-16' },  // Javier's birthday
+    ];
+
+    // Helper function to check if a date is blocked
+    function isDateBlocked(dateString) {
+        // Check individual blocked dates
+        if (blockedDates.includes(dateString)) {
+            return true;
+        }
+
+        // Check blocked date ranges
+        const selectedDate = new Date(dateString);
+        for (const range of blockedDateRanges) {
+            const startDate = new Date(range.start);
+            const endDate = new Date(range.end);
+
+            if (selectedDate >= startDate && selectedDate <= endDate) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // Initialize Flatpickr on the date input for visual date blocking
+    const dateInput = document.getElementById('date');
+
+    // Generate array of all blocked dates (individual + ranges)
+    function getAllBlockedDates() {
+        const allBlocked = [...blockedDates];
+
+        // Add all dates from ranges
+        blockedDateRanges.forEach(range => {
+            const start = new Date(range.start);
+            const end = new Date(range.end);
+
+            for (let date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
+                const dateString = date.toISOString().split('T')[0];
+                if (!allBlocked.includes(dateString)) {
+                    allBlocked.push(dateString);
+                }
+            }
+        });
+
+        return allBlocked;
+    }
+
+    // Initialize Flatpickr
+    const flatpickrInstance = flatpickr(dateInput, {
+        minDate: "today",
+        dateFormat: "Y-m-d",
+        disable: getAllBlockedDates(),
+        locale: {
+            firstDayOfWeek: 1 // Monday
+        },
+        onChange: function (selectedDates, dateStr, instance) {
+            // Additional validation (backup)
+            if (isDateBlocked(dateStr)) {
+                instance.clear();
+            }
+        }
+    });
 
     // Open Modal
     bookButtons.forEach(btn => {
@@ -528,6 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const tourName = btn.getAttribute('data-tour');
             tourInput.value = tourName;
+
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
 
@@ -561,48 +661,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const date = document.getElementById('date').value;
         const pax = document.getElementById('pax').value;
         const hotel = document.getElementById('hotel').value;
-        const lang = document.getElementById('tourLang').value;
         const coupon = document.getElementById('coupon').value.trim().toUpperCase();
 
-        // Fallback to simple text symbols to guarantee compatibility
-        // Emoticons are removed to ensure clean message delivery first
-        const emojiWave = "👋";
-        const emojiMap = "🗺️";
-        const emojiUser = "👤";
-        const emojiDate = "📅";
-        const emojiGroup = "👥";
-        const emojiHotel = "🏨";
-        const emojiSpeak = "🗣️";
-        const emojiTicket = "🎟️";
-
-        let intro = `Hello Cantik Tours! ${emojiWave}`;
-        if (currentLang === 'es') intro = `Hola Cantik Tours! ${emojiWave}`;
-        if (currentLang === 'id') intro = `Halo Cantik Tours! ${emojiWave}`;
+        let intro = `Hola Cantik Tours!`;
+        if (currentLang === 'en') intro = `Hello Cantik Tours!`;
+        if (currentLang === 'id') intro = `Halo Cantik Tours!`;
 
         let couponText = "";
         if (coupon) {
-            // Add coupon line if exists
-            couponText = `\n${emojiTicket} *Cupón:* ${coupon}`;
-            if (currentLang === 'en') couponText = `\n${emojiTicket} *Code:* ${coupon}`;
-            if (currentLang === 'id') couponText = `\n${emojiTicket} *Kode:* ${coupon}`;
+            couponText = `\n• Cupón: ${coupon}`;
+            if (currentLang === 'en') couponText = `\n• Code: ${coupon}`;
+            if (currentLang === 'id') couponText = `\n• Kode: ${coupon}`;
         }
 
         let messageBody = "";
         if (currentLang === 'es') {
-            messageBody = `\n\nHola, me gustaría recibir más información sobre este tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nombre:* ${name}\n${emojiDate} *Fecha tentativa:* ${date}\n${emojiGroup} *Pasajeros:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Idioma:* ${lang}${couponText}\n\nQuedo a la espera de los detalles. ¡Gracias!`;
+            messageBody = `\n\nMe gustaría recibir más información sobre este tour:\n\n• Tour: ${tour}\n• Nombre: ${name}\n• Fecha tentativa: ${date}\n• Pasajeros: ${pax}\n• Hotel: ${hotel}${couponText}\n\nQuedo a la espera de los detalles. ¡Gracias!`;
         } else if (currentLang === 'en') {
-            messageBody = `\n\nHi, I would like more information about this tour:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Name:* ${name}\n${emojiDate} *Tentative Date:* ${date}\n${emojiGroup} *Travelers:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Language:* ${lang}${couponText}\n\nLooking forward to the details. Thanks!`;
+            messageBody = `\n\nI would like more information about this tour:\n\n• Tour: ${tour}\n• Name: ${name}\n• Tentative Date: ${date}\n• Travelers: ${pax}\n• Hotel: ${hotel}${couponText}\n\nLooking forward to the details. Thanks!`;
         } else {
-            messageBody = `\n\nHalo, saya ingin informasi lebih lanjut tentang tur ini:\n${emojiMap} *Tour:* ${tour}\n${emojiUser} *Nama:* ${name}\n${emojiDate} *Tanggal:* ${date}\n${emojiGroup} *Wisatawan:* ${pax}\n${emojiHotel} *Hotel:* ${hotel}\n${emojiSpeak} *Bahasa:* ${lang}${couponText}\n\nMenunggu konfirmasi. Terima kasih!`;
+            messageBody = `\n\nSaya ingin informasi lebih lanjut tentang tur ini:\n\n• Tour: ${tour}\n• Nama: ${name}\n• Tanggal: ${date}\n• Wisatawan: ${pax}\n• Hotel: ${hotel}${couponText}\n\nMenunggu konfirmasi. Terima kasih!`;
         }
 
-        // Encode the entire message
+        // Build the complete message
         const fullMessage = intro + messageBody;
-        const finalMessage = encodeURIComponent(fullMessage);
 
-        // WhatsApp URL
+        // WhatsApp URL - Simple and reliable encoding
         const phoneNumber = '6285940365407';
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${finalMessage}`;
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
 
         // Track booking submission
         if (window.Analytics) {

@@ -202,14 +202,22 @@ img {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 16px 36px;
+    padding: 14px 28px;
     border-radius: var(--radius-pill);
     font-weight: 600;
     cursor: pointer;
     border: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
+}
+
+/* Larger buttons on mobile for better touch targets */
+@media (max-width: 768px) {
+    .btn {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
 }
 
 .btn-primary {
@@ -407,9 +415,19 @@ img {
 }
 
 .price-new {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+.reviewer-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name .meta {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
 }
 
 
@@ -730,6 +748,10 @@ footer {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--color-text-light);
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
 
 .form-group label {

@@ -31,19 +31,18 @@
 
     <style>
         /* Guide Specific Styles to match existing theme */
-        .guide-hero {
-            height: 50vh;
-            min-height: 400px;
-            /* Stronger, smoother gradient for better legibility without harsh shadows */
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%), url('images/hero-bali.png');
+        /* Custom Adjustment for Guide Hero to keep it slightly more compact than Index if desired, 
+           otherwise it will inherit the 100vh from .hero */
+        .hero.hero-guide {
+            height: 70vh;
+            min-height: 500px;
+            background: var(--gradient-overlay), url('images/hero-bali.png');
             background-size: cover;
             background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 60px;
+            background-attachment: fixed;
+            /* Parallax effect like Index */
+            padding-top: 80px;
+            /* Offset for fixed navbar */
         }
 
         .article-card {
@@ -121,15 +120,14 @@
         </div>
     </nav>
 
-    <!-- Guide Hero -->
-    <section class="guide-hero">
-        <div class="container">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700;"
-                data-i18n="guide.hero.title">Guía Esencial de Bali</h1>
-            <p style="font-size: 1.3rem; max-width: 600px; margin: 0 auto; color: #f0f0f0; opacity: 0.95;"
-                data-i18n="guide.hero.subtitle">Todo lo que
-                necesitas saber antes de
-                aterrizar en la Isla de los Dioses. Visados, zonas y consejos locales.</p>
+    <!-- Guide Hero (Matches Index Style) -->
+    <section class="hero hero-guide">
+        <div class="container hero-content">
+            <span class="urgency-badge" data-i18n="hero.badge">Agenda abierta Enero 2026</span>
+            <h1 data-i18n="guide.hero.title">Guía Esencial de Bali</h1>
+            <p data-i18n="guide.hero.subtitle">Todo lo que necesitas saber antes de aterrizar en la Isla de los Dioses.
+                Visados, zonas y consejos locales.</p>
+            <a href="#visado" class="btn btn-primary" data-i18n="guide.cta.btn_hero">Empezar a leer</a>
         </div>
     </section>
 
@@ -139,92 +137,79 @@
 
             <!-- Visado -->
             <article class="article-card" id="visado">
-                <!-- Icon removed for cleaner look -->
-                <h2 data-i18n="guide.visa.title">🛂 Visado para entrar a Indonesia (2025)</h2>
-                <p data-i18n="guide.visa.p1">Para la mayoría de nacionalidades (España, Chile, México, Argentina, etc.),
-                    el proceso es muy
-                    sencillo. Tienes dos opciones principales:</p>
-
-                <div class="zone-grid">
+                <!-- Visados -->
+                <h2 data-i18n="guide.visa.title">🛂 Visado para Indonesia (2025)</h2>
+                <p data-i18n="guide.visa.p1">Para la mayoría de las nacionalidades, el proceso es muy sencillo. Tienes
+                    dos opciones principales:</p>
+                <div class="zone-grid" style="margin-top: 1.5rem;">
                     <div class="zone-card">
-                        <h3 data-i18n="guide.visa.voa.title">1. Visa on Arrival (VoA) - En el Aeropuerto</h3>
-                        <p data-i18n="guide.visa.voa.desc">Es lo más común. Al aterrizar en Bali, vas al mostrador de
-                            "Visa on Arrival".</p>
-                        <ul style="margin-left: 20px; list-style-type: disc; margin-top: 10px;">
-                            <li data-i18n="guide.visa.voa.cost"><strong>Costo:</strong> 500.000 IDR (aprox. 30€ / 35
-                                USD).</li>
-                            <li data-i18n="guide.visa.voa.pay"><strong>Pago:</strong> Efectivo (Euros, Dólares o Rupias)
-                                o Tarjeta.</li>
-                            <li data-i18n="guide.visa.voa.duration"><strong>Duración:</strong> 30 días (extensible una
-                                vez por otros 30).</li>
-                        </ul>
+                        <h3 data-i18n="guide.visa.voa.title">1. Visa on Arrival (VoA)</h3>
+                        <p data-i18n="guide.visa.voa.desc">La opción más común. Al aterrizar en Bali, vas al mostrador
+                            de "Visa on Arrival".</p>
+                        <p data-i18n="guide.visa.voa.cost"><strong>Coste:</strong> 500.000 IDR (aprox. 30€).</p>
+                        <p data-i18n="guide.visa.voa.duration"><strong>Duración:</strong> 30 días (ampliable una vez).
+                        </p>
                     </div>
                     <div class="zone-card">
-                        <h3 data-i18n="guide.visa.evisa.title">2. e-Visa (Online) - Recomendado</h3>
-                        <p data-i18n="guide.visa.evisa.desc">Puedes tramitarlo antes de viajar en la web oficial de
-                            inmigración. Te ahorras la cola de
-                            pago en el aeropuerto.</p>
-                        <div class="tip-box">
-                            <span data-i18n="guide.visa.evisa.tip"><strong>Tip Pro:</strong> Asegúrate de usar solo la
-                                web oficial (molina.imigrasi.go.id) para
-                                evitar estafas.</span>
-                        </div>
+                        <h3 data-i18n="guide.visa.evisa.title">2. e-Visa (Online)</h3>
+                        <p data-i18n="guide.visa.evisa.desc">Puedes tramitarla antes de viajar en la web oficial de
+                            inmigración para ahorrar tiempo.</p>
+                        <p><strong data-i18n="guide.visa.evisa.tip">Pro Tip:</strong> Usa solo la web oficial
+                            (molina.imigrasi.go.id).</p>
                     </div>
                 </div>
-                <p style="margin-top: 20px;" data-i18n="guide.visa.req"><strong>Requisito Importante:</strong> Tu
-                    pasaporte debe tener al menos 6
-                    meses de validez desde el día de entrada y una página en blanco.</p>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; border-left: 3px solid var(--color-accent); padding-left: 1rem;"
+                    data-i18n="guide.visa.req">
+                    <strong>Requisito Crítico:</strong> Tu pasaporte debe tener una validez de al menos 6 meses desde el
+                    día de entrada.
+                </p>
             </article>
 
             <!-- Impuesto Turistico -->
-            <article class="article-card">
-                <!-- Icon removed for cleaner look -->
-                <h2 data-i18n="guide.levy.title">💸 Impuesto Turístico (Bali Levy)</h2>
-                <p data-i18n="guide.levy.desc">Desde 2024, existe una tasa turística obligatoria para entrar a la isla
-                    de Bali.</p>
-                <p data-i18n="guide.levy.cost"><strong>Costo:</strong> 150.000 IDR (aprox. 9€) por persona.</p>
-                <p data-i18n="guide.levy.rec">Se recomienda pagarlo online antes de viajar a través de la web o app
-                    "Love Bali" para agilizar la
-                    salida del aeropuerto, aunque también suelen haber mostradores allí.</p>
+            <!-- Tasa Turistica -->
+            <article class="article-card" id="levy">
+                <h2 data-i18n="guide.levy.title">💸 Tasa Turística (Bali Levy)</h2>
+                <p data-i18n="guide.levy.desc">Desde 2024, existe una tasa obligatoria para todos los turistas
+                    extranjeros que entran en la isla de Bali.</p>
+                <div class="tip-box">
+                    <p><strong>Coste:</strong> 150.000 IDR (aprox. 9€).</p>
+                    <p data-i18n="guide.levy.rec">Se recomienda pagarlo online antes de viajar a través de la web
+                        oficial "Love Bali" para agilizar tu salida del aeropuerto.</p>
+                </div>
             </article>
 
             <!-- Zonas -->
             <article class="article-card" id="zonas">
-                <!-- Icon removed for cleaner look -->
-                <h2 data-i18n="guide.zones.title">📍 ¿Dónde alojarse? Zonas principales</h2>
+                <!-- Donde alojarse -->
+                <h2 data-i18n="guide.zones.title">📍 ¿Dónde alojarse? Zonas Principales</h2>
                 <p data-i18n="guide.zones.desc">Bali es más grande de lo que parece y el tráfico puede ser lento. Elegir
-                    bien tu base es clave.</p>
-
-                <div class="zone-grid">
+                    bien tu base es fundamental.</p>
+                <div class="zone-grid" style="margin-top: 1.5rem;">
                     <div class="zone-card">
-                        <h3 data-i18n="guide.zone.ubud.title">🌿 Ubud (Centro/Cultura)</h3>
-                        <p data-i18n="guide.zone.ubud.desc">Selva, terrazas de arroz, yoga y templos. Es el corazón
-                            cultural. Ideal para estar tranquilo
-                            y conectar con la naturaleza.</p>
+                        <h3 data-i18n="guide.zone.ubud.title">🌿 Ubud (Centro / Cultura)</h3>
+                        <p data-i18n="guide.zone.ubud.desc">Selva, arrozales, yoga y templos. El corazón cultural. Ideal
+                            para la tranquilidad.</p>
                         <p><em data-i18n="guide.zone.ubud.for">Perfecto para: Parejas, familias, amantes del yoga.</em>
                         </p>
                     </div>
                     <div class="zone-card">
-                        <h3 data-i18n="guide.zone.ulu.title">🌊 Uluwatu (Sur/Playas)</h3>
-                        <p data-i18n="guide.zone.ulu.desc">Las mejores playas de agua turquesa y acantilados
-                            impresionantes. Ambiente surfero y
-                            relajado. Necesitas moto o transporte.</p>
+                        <h3 data-i18n="guide.zone.ulu.title">🌊 Uluwatu (Sur / Playas)</h3>
+                        <p data-i18n="guide.zone.ulu.desc">Mejores playas de agua turquesa y acantilados. Ambiente
+                            surfero y relajado.</p>
                         <p><em data-i18n="guide.zone.ulu.for">Perfecto para: Surfers, amantes de la playa,
                                 atardeceres.</em></p>
                     </div>
                     <div class="zone-card">
-                        <h3 data-i18n="guide.zone.canggu.title">🍹 Canggu / Seminyak (Oeste/Moda)</h3>
-                        <p data-i18n="guide.zone.canggu.desc">Tiendas de diseño, beach clubs, cafeterías "aesthetic" y
-                            mucha vida nocturna. Mucho tráfico
-                            pero mucha acción.</p>
+                        <h3 data-i18n="guide.zone.canggu.title">🍹 Canggu / Seminyak (Oeste / Moda)</h3>
+                        <p data-i18n="guide.zone.canggu.desc">Tiendas de diseño, beach clubs, cafeterías estéticas y
+                            vida nocturna. Mucha acción.</p>
                         <p><em data-i18n="guide.zone.canggu.for">Perfecto para: Jóvenes, nómadas digitales, fiesta y
                                 compras.</em></p>
                     </div>
                     <div class="zone-card">
-                        <h3 data-i18n="guide.zone.nusa.title">🏖️ Nusa Dua / Sanur (Relax/Lujo)</h3>
+                        <h3 data-i18n="guide.zone.nusa.title">🏖️ Nusa Dua / Sanur (Relax / Lujo)</h3>
                         <p data-i18n="guide.zone.nusa.desc">Resorts grandes a pie de playa. Sanur es muy tranquilo y
-                            familiar. Nusa Dua es lujo y
-                            seguridad.</p>
+                            familiar. Nusa Dua es lujo puro.</p>
                         <p><em data-i18n="guide.zone.nusa.for">Perfecto para: Familias con niños, lunas de miel
                                 relax.</em></p>
                     </div>
@@ -321,7 +306,7 @@
                 <div class="footer-col">
                     <h4 class="logo" style="color: white; margin-bottom: 20px;">Cantik Tours</h4>
                     <p class="footer-desc" style="text-align: left; margin-left: 0;" data-i18n="footer.brand_desc">
-                        Authentic private tours in Bali with local Spanish & English speaking guides.
+                        Tours privados auténticos en Bali con guías locales que hablan español e inglés.
                     </p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -332,31 +317,31 @@
 
                 <!-- Col 2: Quick Links -->
                 <div class="footer-col">
-                    <h4 data-i18n="footer.links">Quick Links</h4>
+                    <h4 data-i18n="footer.links">Enlaces Rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="index.html#tours" data-i18n="nav.tours">Tours</a></li>
-                        <li><a href="guide.html" data-i18n="nav.guide">Guide 2026</a></li>
-                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a></li>
-                        <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                        <li><a href="guide.html" data-i18n="nav.guide">Guía 2026</a></li>
+                        <li><a href="index.html#reviews" data-i18n="nav.reviews">Reseñas</a></li>
+                        <li><a href="index.html#faq" data-i18n="nav.faq">Dudas Comunes</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 3: Contact -->
                 <div class="footer-col">
-                    <h4 data-i18n="footer.contact">Contact Us</h4>
+                    <h4 data-i18n="footer.contact">Contacto</h4>
                     <ul class="footer-contact">
                         <li><i class="fab fa-whatsapp"></i> +62 859 4036 5407</li>
-                        <li><i class="far fa-envelope"></i> hello@cantiktours.com</li>
+                        <li><i class="far fa-envelope"></i> info@cantiktours.com</li>
                         <li><i class="fas fa-map-marker-alt"></i> Ubud, Bali, Indonesia</li>
                     </ul>
                     <a href="https://wa.me/6285940365407" target="_blank" class="btn btn-primary btn-sm"
                         style="margin-top: 15px;">
-                        <span data-i18n="footer.btn">Chat on WhatsApp</span>
+                        <span data-i18n="footer.btn">Hablemos por WhatsApp</span>
                     </a>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Cantik Tours. <span data-i18n="footer.rights">All rights reserved.</span>
+                <p>&copy; 2026 Cantik Tours. <span data-i18n="footer.rights">Todos los derechos reservados.</span>
                 </p>
             </div>
         </div>

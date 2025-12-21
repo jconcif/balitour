@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.tours': 'Tours',
             'nav.reviews': 'Reseñas',
             'nav.faq': 'FAQ',
-            'nav.about': 'Sobre Nosotros',
+            'nav.about': 'Nosotros',
             'nav.contact': 'Contacto',
             'hero.badge': '🔥 Plazas Limitadas',
             'hero.title': 'Descubre Bali a Tu Manera',
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'trust.satisfaction': '100% Satisfacción',
             'tours.title': 'Nuestros Tours Más Populares',
             'tours.subtitle': 'Experiencias cuidadosamente diseñadas para descubrir la magia de Bali',
+            'trust.message': '✨ Reserva ahora y paga al finalizar el tour. Sin depósitos.',
             'tour1.title': 'Corazón de Bali (Ubud Clásico)',
             'tour1.desc': 'Explora impresionantes terrazas de arroz, el sagrado bosque de los monos y templos antiguos en el corazón cultural de Bali.',
             'tour2.title': 'Puertas del Cielo (Ruta Este)',
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'tour4.desc': 'Descubre cascadas impresionantes, lagos gemelos serenos y el icónico templo flotante Ulun Danu Beratan.',
             'tour.price': 'desde 60€ / día',
             'tour.btn': 'Consultar Disponibilidad',
+            'btn.book': 'Reservar Ahora',
             'reviews.title': 'Experiencias de Nuestros Viajeros',
             'review1.text': '"Increíble. Wayan no solo fue un guía, fue un amigo. Nos explicó la cultura balinesa con una pasión contagiosa. 10/10."',
             'review2.text': '"El coche era nuevísimo y muy cómodo. Nos sentimos seguros y cuidados en todo momento. ¡Gracias Cantik Tours!"',
@@ -121,14 +123,25 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.tip.water': '<strong>💧 Agua:</strong> Nunca bebas agua del grifo. Usa siempre agua embotellada, incluso para lavarte los dientes si tienes estómago sensible.',
             'guide.cta.title': '¿Listo para explorar la isla?',
             'guide.cta.desc': 'Deja que nos encarguemos del transporte y los detalles.',
-            'guide.cta.btn': 'Ver Tours Disponibles'
+            'guide.cta.btn': 'Ver Tours Disponibles',
+            'guide.internet.title': '🌐 Internet: ¿Cómo estar conectado?',
+            'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
+            'guide.internet.esim_desc': 'Lo más cómodo. La instalas antes de viajar y tienes internet nada más aterrizar. Ideal si tu teléfono es moderno.',
+            'guide.internet.sim_title': 'SIM Física (Telkomsel)',
+            'guide.internet.sim_desc': 'Lo más económico. Busca tiendas oficiales de Telkomsel. Ojo: por ley hay que registrar el IMEI del teléfono si te quedas más de 90 días.',
+            'guide.money.title': '🏧 Dinero, Cajeros y Estafas',
+            'guide.money.atms': 'Usa preferiblemente cajeros **dentro** de bancos (BNI, Mandiri, BCA). Evita cajeros aislados en la calle para prevenir clonaciones.',
+            'guide.money.exchange': 'Casas de Cambio: No confíes en locales con "No Commission" y tasas demasiado buenas. Busca locales autorizados (BMC o Central Kuta) para evitar que te "desaparezcan" billetes al contar.',
+            'guide.apps.title': '📲 Apps Imprescindibles',
+            'guide.apps.grab_desc': 'Los "Uber" de Bali. Imprescindibles para pedir transporte (moto o coche) y comida a domicilio a precios locales.',
+            'guide.apps.maps_desc': 'Funciona muy bien. Te recomendamos descargar el mapa de la isla offline antes de salir.'
         },
         en: {
             'nav.home': 'Home',
             'nav.tours': 'Experiences',
             'nav.reviews': 'Testimonials',
             'nav.faq': 'Q&A',
-            'nav.about': 'Our Philosophy',
+            'nav.about': 'About Us',
             'nav.contact': 'Contact',
             'hero.badge': '🔥 Limited Availability for 2025',
             'hero.title': 'Bali: Luxury, Culture & Freedom',
@@ -146,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'trust.satisfaction': '100% Satisfaction',
             'tours.title': 'Exclusive Itineraries',
             'tours.subtitle': 'Curated selection of the best routes, fully customizable.',
+            'trust.message': '✨ Book now, pay later. No deposit required.',
             'tour1.title': 'The Heart of Bali (Ubud)',
             'tour1.desc': 'Immerse in spirituality. Monkey Forest, Rice Terraces, and Sacred Temples.',
             'tour2.title': 'Mother Temple & Volcanoes',
@@ -156,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'tour4.desc': 'Discover breathtaking waterfalls, serene twin lakes, and the iconic floating temple Ulun Danu Beratan.',
             'tour.price': 'from 60€ / day',
             'tour.btn': 'Check Availability',
+            'btn.book': 'Book Now',
             'reviews.title': 'Traveler Stories',
             'review1.text': '"Incredible. Wayan was not just a guide, but a friend. He explained Balinese culture with contagious passion."',
             'review2.text': '"The car was brand new and super comfortable. We felt safe and cared for every moment. Thanks Cantik Tours!"',
@@ -196,8 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'modal.btn.send': 'Send to WhatsApp',
             'modal.placeholder.hotel': 'Ex: W Hotel, Seminyak',
             'gallery.title': 'Moments in Paradise',
-            'gallery.subtitle': 'Follow us @CantikToursBali',
-            'gallery.btn': 'View Instagram',
+
             // Guide Page - EN
             'guide.hero.title': 'Essential Bali Guide',
             'guide.hero.subtitle': 'Everything you need to know before landing on the Island of Gods. Visas, zones, and local tips.',
@@ -237,7 +251,18 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.tip.water': '<strong>💧 Water:</strong> Never drink tap water. Always use bottled water, even for brushing teeth if you have a sensitive stomach.',
             'guide.cta.title': 'Ready to explore the island?',
             'guide.cta.desc': 'Let us handle the transport and details.',
-            'guide.cta.btn': 'View Available Tours'
+            'guide.cta.btn': 'View Available Tours',
+            'guide.internet.title': '🌐 Internet: How to Stay Connected?',
+            'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
+            'guide.internet.esim_desc': 'The most convenient. Install it before traveling and have internet as soon as you land. Best for modern phones.',
+            'guide.internet.sim_title': 'Physical SIM (Telkomsel)',
+            'guide.internet.sim_desc': 'The most economical. Look for official Telkomsel shops. Note: by law, you must register your phone\'s IMEI if staying over 90 days.',
+            'guide.money.title': '🏧 Money, ATMs, and Scams',
+            'guide.money.atms': 'Preferably use ATMs **inside** banks (BNI, Mandiri, BCA). Avoid isolated street ATMs to prevent skimming.',
+            'guide.money.exchange': 'Money Changers: Don\'t trust "No Commission" shops with too-good-to-be-true rates. Look for authorized ones (BMC or Central Kuta).',
+            'guide.apps.title': '📲 Essential Apps',
+            'guide.apps.grab_desc': 'The "Uber" of Bali. Essential for ordering transport (bike or car) and food delivery at local prices.',
+            'guide.apps.maps_desc': 'Works great. We recommend downloading the island map offline before heading out.'
         },
         id: {
             'nav.home': 'Beranda',
@@ -262,6 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'trust.satisfaction': '100% Kepuasan',
             'tours.title': 'Tur Paling Populer Kami',
             'tours.subtitle': 'Pengalaman yang dirancang dengan hati-hati untuk menemukan keajaiban Bali',
+            'trust.message': '✨ Pesan sekarang, bayar nanti. Tanpa deposit.',
             'tour1.title': 'Jantung Bali (Ubud Klasik)',
             'tour1.desc': 'Jelajahi sawah terasering yang menakjubkan, hutan monyet suci, dan pura kuno di jantung budaya Bali.',
             'tour2.title': 'Gerbang Surga (Rute Timur)',
@@ -348,9 +374,20 @@ document.addEventListener('DOMContentLoaded', () => {
             'guide.tip.plugs': '<strong>🔌 Colokan:</strong> Tipe C dan F (standar Eropa). Tidak perlu adaptor bagi sebagian besar turis Eropa.',
             'guide.tip.transport': '<strong>🛵 Transportasi:</strong> Tidak ada transportasi umum yang efisien. Gunakan aplikasi Grab/Gojek atau sewa <strong>supir pribadi</strong> untuk tur harian (seperti kami! 😉).',
             'guide.tip.water': '<strong>💧 Air:</strong> Jangan minum air keran. Selalu gunakan air kemasan, bahkan untuk gosok gigi jika perut sensitif.',
-            'guide.cta.title': 'Siap menjelalah pulau?',
+            'guide.cta.title': 'Siap menjelajahi pulau?',
             'guide.cta.desc': 'Biar kami yang urus transportasi dan detailnya.',
-            'guide.cta.btn': 'Lihat Tur Tersedia'
+            'guide.cta.btn': 'Lihat Tur Tersedia',
+            'guide.internet.title': '🌐 Internet: Cara Tetap Terhubung?',
+            'guide.internet.esim_title': 'eSIM (Airalo / Holafly)',
+            'guide.internet.esim_desc': 'Paling praktis. Instal sebelum berangkat dan langsung aktif saat mendarat.',
+            'guide.internet.sim_title': 'SIM Fisik (Telkomsel)',
+            'guide.internet.sim_desc': 'Paling hemat. Cari toko resmi Telkomsel.',
+            'guide.money.title': 'ATM, Uang & Penipuan',
+            'guide.money.atms': 'Gunakan ATM di dalam bank (BNI, Mandiri, BCA) untuk keamanan.',
+            'guide.money.exchange': 'Penukaran Uang: Gunakan tempat resmi (BMC atau Central Kuta).',
+            'guide.apps.title': '📲 Aplikasi Penting',
+            'guide.apps.grab_desc': 'Pesan transportasi dan makanan dengan mudah.',
+            'guide.apps.maps_desc': 'Navigasi terbaik untuk keliling pulau.'
         }
     };
 
@@ -595,6 +632,19 @@ document.addEventListener('DOMContentLoaded', () => {
     tourCards.forEach(card => {
         tourObserver.observe(card);
     });
+
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
 
     // Reviews Slider Logic
     const slider = document.querySelector('.reviews-slider');

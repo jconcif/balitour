@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.faq': 'FAQ',
             'nav.about': 'Nosotros',
             'nav.contact': 'Contacto',
-            'hero.badge': 'Agenda abierta Enero 2026',
+            'hero.badge': 'Agenda abierta Enero / Febrero 2026',
             'hero.title': 'Bali no se visita, se vive.',
             'hero.subtitle': 'Descubre la esencia de la isla a través de guías locales que conocen cada rincón y te muestran un Bali auténtico, cercano y sin prisas.',
             'hero.cta': 'Planear mi viaje a Bali',
